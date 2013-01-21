@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "OoQEdCm0",
+        "filename": "exercises/egit/git/change-a-series-of-commits.txt~",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2013-01-21T10:39:41Z",
+      "side": 1,
+      "message": "This looks like a backup file that got included accidentally.\n\nI\u0027ve uploaded a change [1] to remove it.\n\n[1] https://gerrit-review.googlesource.com/41470",
+      "revId": "eef5455341f24c516d79a5aa843e3003f4a5b164",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
