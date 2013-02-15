@@ -1,5 +1,5 @@
 ASCIIDOC ?= asciidoc
-ASCIIDOC_EXTRA ?=
+ASCIIDOC_EXTRA ?= -a icons -a iconsdir=/opt/local/etc/asciidoc/images/icons
 
 all: html pdf
 
