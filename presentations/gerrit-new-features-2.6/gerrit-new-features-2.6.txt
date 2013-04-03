@@ -1,0 +1,298 @@
+= What's new in Gerrit 2.6
+:backend: slidy
+:max-width: 70em
+:data-uri:
+
+[[title-page]]
+== What's new in Gerrit 2.6
+
+== What's new in Gerrit 2.6
+* link:http://gerrit-documentation.googlecode.com/svn/ReleaseNotes/ReleaseNotes-2.6.html[
+Release Notes]
+
+* Statistics
++
+[width="50%",cols=">s,^m,^m,^m",options="header"]
+|==========================
+|                 |Gerrit 2.6-rc0 |Gerrit 2.5 |Gerrit 2.4
+|commits &#x278a; |1093           |508        |122
+|resolved issues
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.6[59]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.5[51]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.4[35]
+|contributors     |52             |34         |22
+|==========================
++
+&#x278a; without merge commits
+
+== New Default Skin
+
+.Gerrit 2.6
+image:../../img/Gerrit-2.6-skin.png[Gerrit 2.6 Skin]
+
+.Gerrit 2.5
+image:../../img/Gerrit-2.5-skin.png[Gerrit 2.5 Skin]
+
+== Edit Commit Message from UI
+
+.Icon to edit Commit Message
+image:../../img/edit-commit-message-1.png[Edit Commit Message 1]
+
+.Dialog to edit Commit Message
+image:../../img/edit-commit-message-2.png[Edit Commit Message 2]
+
+== Edit Change Topic from UI
+
+.Icon to edit Change Topic
+image:../../img/edit-change-topic-1.png[Edit Change Topic 1]
+
+.Dialog to edit Change Topic
+image:../../img/edit-change-topic-2.png[Edit Change Topic 2]
+
+== `Add Comment` Button
+Below the summary comments there is now a button to add a comment.
+
+image:../../img/add-comment-button.png[Add Comment Button]
+
+== Support for Project Specific Labels
+Individual projects can add (or remove) score categories through
+link:http://gerrit-documentation.googlecode.com/svn/Documentation/2.6/config-labels.html[
+labels] and link:http://gerrit-documentation.googlecode.com/svn/Documentation/2.6/prolog-cookbook.html[
+Prolog rules]. +
+This makes the workflow completely customizable.
+
+image:../../img/custom-label.png[Custom Label]
+
+.project.config
+----
+[label "IP"]
+  function = MaxWithBlock
+  value = -1 Bad
+  value = 0 No score
+  value = +1 Clean
+----
+
+
+== File Level Comments
+It is now possible to comment on a whole file.
+
+.Icon to add a comment on a file
+image:../../img/file-comment-1.png[File Comment 1]
+
+.Editor for a comment on a file
+image:../../img/file-comment-2.png[File Comment 2]
+
+== Reviewed Panel at Bottom
+
+image:../../img/reviewed-panel-at-bottom.png[Reviewed Panel at Bottom]
+
+== New Submit Type `Rebase If Necessary`
+The 'Rebase If Necessary' submit type automatically rebases the
+changes on submit if needed. If a change gets rebased the rebased
+commit is added as a new patch set to the change.
+
+image:../../img/rebase-if-necessary.png[Rebase If Necessary]
+
+== Branch specific Submit Types
+The submit type for changes can now be controlled from Prolog. This
+enables branch specific submit types. E.g. for devlopment branches the
+submit type can be `Merge If Necessary` while for release branches it
+is `Fast Forward Only`.
+
+image:../../img/submit-type-on-change-screen.png[Submit Type]
+
+== Show in ApprovalTable if a Reviewer can't vote in a Category
+For a user that cannot vote in a category the cell in the category
+column of the ApprovalTable will be shown with a grey background.
+A tooltip explains that the user cannot vote in this category.
+
+image:../../img/reviewer-cannot-vote-in-category.png[Reviewer Cannot
+Vote In Category]
+
+== Voting on Draft Changes
+It is now possible to vote on draft changes.
+
+image:../../img/voting-2.png[Voting]
+
+== Filtering of Project List and Group List
+
+image:../../img/filter-projects.png[Filter Projects]
+
+== Query Icon for Projects
+The icon links to a default query or to the projects default
+dashboard.
+
+.In Project List
+image:../../img/query-icon-1.png[Query Icon in Project List]
+
+.On Change Screen
+image:../../img/query-icon-2.png[Query Icon on Change Screen]
+
+== Search Box
+
+=== Suggestions
+The Search Box now provides suggestions for projects, groups and
+users.
+
+image:../../img/search-box-project-suggestion.png[Project Suggestion]
+
+=== Animation
+When typing a query the search box is automatically expanded.
+
+.Collapsed
+image:../../img/search-box.png[Search Box]
+
+.Expanded
+image:../../img/search-box-expanded.png[Search Box Expanded]
+
+== Project Screens: Top Menus instead of Side Menus
+Also the last accessed project and the last accessed project screen
+are remembered.
+
+.Gerrit 2.6
+image:../../img/project-screen-top-menus.png[Project Screens Top Menus]
+
+.Gerrit 2.5
+image:../../img/project-screen-side-menus.png[Project Screens Side Menus]
+
+== Project Dashboards
+link:https://gerrit-review.googlesource.com/Documentation/user-dashboards.html#_project_dashboards[
+Project Dashboards] can be defined in `refs/meta/dashbaords/*`.
+
+image:../../img/project-dashboards.png[Project Dashboards]
+
+== Custom Dashboard: Link Section Title to Query
+
+.Custom Dashboard
+image:../../img/to-query-1.png[Link Section Title to Query 1]
+
+.Query
+image:../../img/to-query-2.png[Link Section Title to Query 2]
+
+== Notifications
+
+* Project owners and site administrators can
+  link:http://gerrit-documentation.googlecode.com/svn/Documentation/2.6/user-notify.html[
+  configure project level notifications]
++
+----
+  [notify "team"]
+    email = team-address@example.com
+    email = paranoid-manager@example.com
+----
+
+* watchers are notified if a draft change is published
+
+* support watching upload of new patch sets
++
+image:../../img/email-notifications.png[Email notifications]
+
+* Automated system can control to whom notifications should be sent
+  link:http://gerrit-documentation.googlecode.com/svn/Documentation/2.6/rest-api-changes.html#set-review[
+  when posting a review via the REST API]
+
+== Basic support for Avatars
+Plugins can provide avatar images for Gerrit users.
+
+.Avatar in Header
+image:../../img/avatar-1.png[Avatar 1]
+
+.Avatar in Settings Popup
+image:../../img/avatar-2.png[Avatar 2]
+
+== Login Screens
+The new form based HTML screens for login allow browsers to offer
+the choice to save the login data locally in the user's password store.
+
+image:../../img/login-screen.png[Login Screen]
+
+== Access Rights
+
+* ALLOW rule on the same project and ref overwrites BLOCK rule
++
+By this an access right can be blocked for all users, while allowing
+it for a certain privileged group.
++
+image:../../img/overwrite-block-rule.png[Overwrite BLOCK rule]
+
+* Global Capabilities are visible to all users who can see the
+  `refs/meta/config` branch in `All-Projects`.
++
+By this users can now propose changes to the global capabilities
+through code review.
++
+image:../../img/global-capabilities.png[Global Capabilities]
+
+* New permissions for editing topics and viewing, deleting and
+  publishing drafts
++
+image:../../img/access-rights.png[Access Rights]
+
+== REST API
+
+* A big chunk of the Gerrit functionality is now available via the
+  link:http://gerrit-documentation.googlecode.com/svn/Documentation/2.6/rest-api.html[REST API].
++
+The REST API is *NOT* complete yet and some functionality is still missing.
++
+To find out which functionality is available, check the REST endpoint documentation for
+link:http://gerrit-documentation.googlecode.com/svn/Documentation/2.6/rest-api-projects.html[projects],
+link:http://gerrit-documentation.googlecode.com/svn/Documentation/2.6/rest-api-changes.html[changes],
+link:http://gerrit-documentation.googlecode.com/svn/Documentation/2.6/rest-api-groups.html[groups] and
+link:http://gerrit-documentation.googlecode.com/svn/Documentation/2.6/rest-api-accounts.html[accounts].
++
+image:../../img/rest-endpoints.png[REST endpoints]
+
+* Support setting `HEAD` of a project
+  link:http://gerrit-documentation.googlecode.com/svn/Documentation/2.6/rest-api-projects.html#set-head[via REST].
+
+== GIT
+
+* *42x* improvement on `git clone` and `git fetch`
++
+Running link:http://gerrit-documentation.googlecode.com/svn/Documentation/2.6/cmd-gc.html[
+gerrit gc] allows JGit to optimize a repository to serve clone and fetch
+faster than C Git can, with massively lower server CPU required. Typically
+Gerrit 2.6 can completely transfer a project to a client faster than C Git
+can finish "Counting" the objects.
+
+* Support for options in ref spec
++
+----
+  refs/for/master%r=alice,cc=bob,cc=charlie,topic=options
+----
+
+* Support for link:http://gerrit-documentation.googlecode.com/svn/Documentation/2.6/config-gerrit.html#core.useRecursiveMerge[
+  recursive merge]
++
+Still experimental, needs to be enabled by the administratior.
+
+
+== Plugins
+
+* support for JavaScript and GWT plugins
+* new extension point for commit validation
+* Plugins can contribute init steps
+* Plugins can contribute Prolog facts/predicates
+
+== Important fixes
+
+* Support for Internet Explorer 9 and 10
+
+* Fix auto closing of changes on direct push
+
+* Don't show error on ACL modifictaions
+** if a section is added more than once or
+** if empty permissions are added
+
+++++
+<style type="text/css">
+#title-page {
+  border-bottom: 0;
+  text-align: center;
+  position: relative;
+  top: 30%;
+  font-size: 60px;
+}
+</style>
+++++
