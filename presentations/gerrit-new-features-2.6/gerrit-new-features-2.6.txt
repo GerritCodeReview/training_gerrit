@@ -281,7 +281,7 @@ Still experimental, needs to be enabled by the administratior.
 
 * Fix auto closing of changes on direct push
 
-* Don't show error on ACL modifictaions
+* Don't show error on ACL modifications
 ** if a section is added more than once or
 ** if empty permissions are added
 
