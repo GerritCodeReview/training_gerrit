@@ -1,6 +1,6 @@
 Building asciidoc presentation:
 - download and install asciidoc (with slidy) and graphviz
-- from the presentations folder run:
+- from the presentations/<subject>/ folder run:
 	./makeslides
 
 Open a presentation:
@@ -8,7 +8,7 @@ Open a presentation:
 - use the same keys like in PowerPoint to move forward and back
 
 Building exercises:
-- from exercise folder run:
+- from exercises/egit/<subject>/ folder run:
     make html
   or
     make pdf
