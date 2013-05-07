@@ -157,7 +157,7 @@ image:../../img/project-screen-side-menus.png[Project Screens Side Menus]
 
 == Project Dashboards
 link:https://gerrit-review.googlesource.com/Documentation/user-dashboards.html#_project_dashboards[
-Project Dashboards] can be defined in `refs/meta/dashbaords/*`.
+Project Dashboards] can be defined in `refs/meta/dashboards/*`.
 
 image:../../img/project-dashboards.png[Project Dashboards]
 
