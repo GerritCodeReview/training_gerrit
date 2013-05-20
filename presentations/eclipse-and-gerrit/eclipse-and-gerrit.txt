@@ -22,14 +22,6 @@
 
 == EGit Installation
 
-* Install EGit from
-+
-http://www.eclipse.org/egit/download/
-+
-image:../../img/egit-download.png[EGit Download]
-
-== EGit Installation
-
 * Install EGit from:
 +
 http://www.eclipse.org/egit/download/

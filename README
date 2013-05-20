@@ -1,14 +1,20 @@
 Building asciidoc presentation:
-- download and install asciidoc (with slidy) and graphviz
+prerequisites: asciidoc (with slidy), graphviz, source-highlight 
+
+1. Short way:  in the top level directory run:
+make all
+
+2. Long way:
 - from the presentations/<subject>/ folder run:
 	./makeslides
-
-Open a presentation:
-- open the resulting *.html document in a web browser
-- use the same keys like in PowerPoint to move forward and back
 
 Building exercises:
 - from exercises/egit/<subject>/ folder run:
     make html
   or
     make pdf
+
+Open a presentation and exercises:
+- open the resulting *.html document in a web browser
+- use the same keys like in PowerPoint to move forward and back
+
