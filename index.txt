@@ -1,0 +1,12 @@
+== Git/Gerrit Training
+
+* link:abstract.html[Training Abstract]
+* link:git-gerrit-workshop.html[Slides]
+* link:./exercises/egit/git/index.html[Git Exercises]
+* link:./exercises/egit/gerrit/index.html[Gerrit Exercises]
+* link:./presentations/eclipse-and-gerrit/index.html[Eclipse & Gerrit]
+* link:./presentations/gerrit-and-code-review-best-practices/index.html[Gerrit and code review best practices]
+* link:./presentations/submit-type-with-prolog/index.html[Submit type with Prolog]
+* link:./presentations/gerrit-new-features-2.1.8-to-2.4/index.html[Gerrit new features: 2.1.8 to 2.4]
+* link:./presentations/gerrit-new-features-2.5/index.html[Gerrit new features: 2.5]
+* link:./presentations/gerrit-new-features-2.6/index.html[Gerrit new features: 2.6]
