@@ -1,0 +1,17 @@
+#!/bin/bash
+cd "$(dirname "$0")"
+if [[ -z "$1" ]]; then
+    ICONS_DIR="/opt/local/etc/asciidoc/images/icons"
+    echo "variable ICONS_DIR empty - using default: $ICONS_DIR"
+else
+    ICONS_DIR=$1
+fi
+
+PWD=`pwd`
+DIR=`basename $PWD`
+echo $DIR 
+
+for FILE in `ls *.txt`; do
+    mkdir -p ../../target/presentations/$DIR
+    asciidoc -a icons -a iconsdir=$ICONS_DIR -o ../../target/presentations/$DIR/${FILE%%.???}.html $FILE
+done
