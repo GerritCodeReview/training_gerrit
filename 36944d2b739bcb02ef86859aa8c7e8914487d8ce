@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ddbee5e1_373638ec",
+        "filename": "presentations/gerrit-new-features-2.6/makeslides",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2013-06-03T12:50:19Z",
+      "side": 0,
+      "message": "Did you forget the makeslides symlink in this folder?",
+      "revId": "36944d2b739bcb02ef86859aa8c7e8914487d8ce",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
