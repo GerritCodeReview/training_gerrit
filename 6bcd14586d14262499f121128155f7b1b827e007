@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fdb9e9f9_98465567",
+        "filename": "presentations/makeslides",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2013-06-03T12:50:19Z",
+      "side": 1,
+      "message": "This file should be executable but it is not. See the file mode below.",
+      "revId": "6bcd14586d14262499f121128155f7b1b827e007",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ddbee5e1_772cb099",
+        "filename": "presentations/makeslides",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2013-06-03T12:50:19Z",
+      "side": 1,
+      "message": "nit: trailing space",
+      "revId": "6bcd14586d14262499f121128155f7b1b827e007",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ddbee5e1_5729ac87",
+        "filename": "presentations/makeslides",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1003873
+      },
+      "writtenOn": "2013-06-03T12:50:19Z",
+      "side": 1,
+      "message": "This looks really like a brute force approach. It will build all .txt files and, for presentations, it will build most of them twice!\n\nFor example git-gerrit-workshop.txt consists mostly of include statements. Every included file will be built once when it is hit by this loop and second time when the git-gerrit-workshop.txt is built (because it is included). We only need to build it when it is included from the git-gerrit-workshop.txt. In other words, we don\u0027t need, and don\u0027t want, to explicitly build the included files.",
+      "revId": "6bcd14586d14262499f121128155f7b1b827e007",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
