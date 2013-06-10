@@ -19,4 +19,4 @@ Bug: NGP-123 is rendered as a hyperlink to jtrack
 [role="incremental"]
 * first line is header
 * separated by a blank line follows the body
-* last paragraph is for meta dat in the `key: value` format
+* last paragraph is for meta data in the `key: value` format
