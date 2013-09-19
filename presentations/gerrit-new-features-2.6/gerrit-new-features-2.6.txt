@@ -14,13 +14,13 @@ Release Notes]
 +
 [width="50%",cols=">s,^m,^m,^m",options="header"]
 |==========================
-|                 |Gerrit 2.6-rc0 |Gerrit 2.5 |Gerrit 2.4
-|commits &#x278a; |1093           |508        |122
+|                 |Gerrit 2.6 |Gerrit 2.5 |Gerrit 2.4
+|commits &#x278a; |1301       |508        |122
 |resolved issues
-|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.6[59]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.6[85]
 |link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.5[51]
 |link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.4[35]
-|contributors     |52             |34         |22
+|contributors     |56         |34         |22
 |==========================
 +
 &#x278a; without merge commits
