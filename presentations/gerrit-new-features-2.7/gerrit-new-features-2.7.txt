@@ -1,0 +1,100 @@
+= What's new in Gerrit 2.7
+:backend: slidy
+:max-width: 70em
+:data-uri:
+
+[[title-page]]
+== What's new in Gerrit 2.7
+
+== What's new in Gerrit 2.7
+* link:http://gerrit-documentation.googlecode.com/svn/ReleaseNotes/ReleaseNotes-2.7.html[
+Release Notes]
+
+* Statistics
++
+[width="50%",cols=">s,^m,^m,^m,^m",options="header"]
+|==========================
+|                 |Gerrit 2.7 |Gerrit 2.6 |Gerrit 2.5 |Gerrit 2.4
+|commits &#x278a; |272        |1301       |508        |122
+|resolved issues
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.7[9]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.6[85]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.5[51]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.4[35]
+|contributors     |31         |56         |34         |22
+|==========================
++
+&#x278a; without merge commits
+
+== Patch Sets with draft comments are highlighted
+
+This makes it more obvious that there are unpublished comments.
+
+image:../../img/highlight-patch-set-with-draft-comments.png[]
+
+== Better support for images in diff screens
+
+.Side-by-Side
+image:../../img/image-comparison-side-by-side.png[]
+
+.Unified-Diff
+image:../../img/image-comparison-unified-diff.png[]
+
+== Option to show relative times in change tables
+
+A new preference setting allows the user to decide if absolute or
+relative dates should be shown in change tables.
+
+.Relative Dates
+image:../../img/relative-dates.png[]
+
+== Support for user avatars
+
+.On Change Screen
+image:../../img/avatar-change-screen.png[]
+
+.For Inline Comments
+image:../../img/avatar-inline-comment.png[]
+
+== Auto-Merge on Push
+
+Teams that want to use Gerrit’s submit strategies to handle contention
+on busy branches can use `%submit` to create a change and have it
+link:http://gerrit-documentation.googlecode.com/svn/Documentation/2.7/user-upload.html#auto_merge[
+immediately submitted], if the caller has Submit permission on
+`refs/for/<ref>`.
+
+
+== Project specific configuration
+
+It is now possible to define
+link:http://gerrit-documentation.googlecode.com/svn/Documentation/2.7/config-gerrit.html#_a_id_commentlink_a_section_commentlink[
+commentlinks] and
+link:http://gerrit-documentation.googlecode.com/svn/Documentation/2.7/config-themes.html[
+themes] on project level.
+
+== Sticky approvals for review labels
+
+Review labels can now be configured so that the highest possible
+positive value for the label is copied forward when a new patch set is
+uploaded. This is done by setting
+link:http://gerrit-documentation.googlecode.com/svn/Documentation/2.7/config-labels.html#label_copyMaxScore[
+copyMaxScore] on the label.
+
+== REST API
+
+Several new
+link:http://gerrit-documentation.googlecode.com/svn/Documentation/2.7/rest-api.html[
+REST API endpoints] were added.
+
+++++
+<style type="text/css">
+#title-page {
+  border-bottom: 0;
+  text-align: center;
+  position: relative;
+  top: 30%;
+  font-size: 60px;
+}
+</style>
+++++
