@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9efd5175_d2f904f7",
+        "filename": "index.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2013-11-07T08:10:54Z",
+      "side": 1,
+      "message": "Maybe I\u0027ve built this differently, but on mine the output file is \"eclipse-and-gerrit.html\" rather than \"index.html\"",
+      "revId": "e3089ea45c9a703af72f5cd3158ca4ec665bfc51",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
