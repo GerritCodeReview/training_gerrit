@@ -30,7 +30,7 @@ image:../../img/egit-download.png[EGit Download]
 
 == EGit Installation
 
-* Install EGit from:
+* Install EGit from
 +
 http://www.eclipse.org/egit/download/
 +
