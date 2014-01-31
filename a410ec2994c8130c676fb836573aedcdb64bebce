@@ -16,6 +16,24 @@
       "revId": "a410ec2994c8130c676fb836573aedcdb64bebce",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d2ca6290_d317142e",
+        "filename": "presentations/gerrit-new-features-2.8/gerrit-new-features-2.8.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2014-01-31T12:53:02Z",
+      "side": 1,
+      "message": "This is not released yet. We can update this section as soon as Gerrit 2.8.2 is released.",
+      "parentUuid": "b2e5ee1d_d217042e",
+      "revId": "a410ec2994c8130c676fb836573aedcdb64bebce",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
