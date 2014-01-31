@@ -1,0 +1,161 @@
+= What's new in Gerrit 2.8
+:backend: slidy
+:max-width: 70em
+:data-uri:
+
+[[title-page]]
+== What's new in Gerrit 2.8
+
+== What's new in Gerrit 2.8
+* link:https://gerrit-documentation.storage.googleapis.com/ReleaseNotes/ReleaseNotes-2.8.html[
+2.8 Release Notes]
+* link:https://gerrit-documentation.storage.googleapis.com/ReleaseNotes/ReleaseNotes-2.8.1.html[
+2.8.1 Release Notes]
+
+* Statistics
++
+[width="50%",cols=">s,^m,^m,^m,^m,^m",options="header"]
+|==========================
+|                 |Gerrit 2.8 |Gerrit 2.7 |Gerrit 2.6 |Gerrit 2.5 |Gerrit 2.4
+|commits &#x278a; |1373       |272        |1301       |508        |122
+|resolved issues
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.8[72]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.7[9]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.6[85]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.5[51]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.4[35]
+|contributors     |54         |31         |56         |34         |22
+|==========================
++
+&#x278a; without merge commits
+
+== Copy review labels on trivial rebase or if there was no code change
+
+* link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.8/config-labels.html#label_copyAllScoresOnTrivialRebase[
+  Labels can be configured to copy scores forward to new patch sets
+  for trivial rebases.]
++
+----
+[label "Code-Review"]
+  function = MaxWithBlock
+  copyMinScore = true
+  copyAllScoresOnTrivialRebase = true
+  value = -2 Do not submit
+  value = -1 I would prefer that you didn't submit this
+  value =  0 No score
+  value = +1 Looks good to me, but someone else must approve
+  value = +2 Looks good to me, approved
+----
+
+* link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.8/config-labels.html#label_copyAllScoresIfNoCodeChange[
+  Labels can be configured to copy scores forward to new patch sets if
+  there is no code change (e.g. only the commit message was edited).]
++
+----
+[label "Verified"]
+  function = MaxWithBlock
+  copyAllScoresIfNoCodeChange = true
+  value = -1 Fails
+  value =  0 No score
+  value = +1 Verified
+----
+
+== Improved performance of change queries
+
+The change search in Gerrit is now backed by a Lucene index which can
+deliver results much faster than the database.
+
+== New search operators
+
+* New link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.8/user-search.html#file[
+  file] operator to find changes on the specified file. Regular
+  expressions can be used to specify a file name pattern.
+
+* New link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.8/user-search.html#comment[
+  comment] operator to find changes that match a string in any comment
+  left by a reviewer
+
+== New Change Screen / New Side-By-Side Diff Screen
+
+The Change Screen was completely redesigned and is now based on the
+Gerrit REST API.
+
+.New Change Screen
+image:../../img/new-change-screen.png[]
+
+.Old Change Screen
+image:../../img/old-change-screen.png[]
+
+== Change Screen Preference
+
+A preference setting allows the user to decide if the new or the old
+change screen should be used.
+
+image:../../img/change-screen-preference.png[]
+
+*WARNING:* The new change screen in 2.8 is still beta.
+
+* Not all features that the old change screen supports are available
+  on the new change screen.
+* The design is not final yet and with Gerrit 2.9 some things will
+  look different.
+* There are known issues with the new change screen that are fixed
+  only in Gerrit 2.9
+
+== New features of new Change Screen / new Side-By-Side Diff Screen
+
+* In the new Side-By-Side Diff Screen comments can be added on code
+  blocks.
+* There is a new button to cherry-pick a change to another branch.
+* For identical files the reviewed flag is automatically copied to
+  new patch sets.
+
+*WARNING:* +
+To insert comments in the new Side-By-Side Diff Screen select a code
+block and press 'c'. Inserting a comment by double click does not work!
+
+== REST API
+
+Many new
+link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.8/rest-api.html[
+REST API endpoints] were added.
+
+== Plugin Extension Points
+
+Gerrit Plugins may now
+
+* contribute buttons to various parts of the UI using the UI
+  extension and JavaScript API.
+* provide global capabilities.
+* provide pre-merge validation steps.
+* provide entries in Gerrit’s top menu.
+* provide download schemes and download commands.
+* send events to the events stream.
+
+== Important Bug Fixes
+* Don’t allow project owners to delete branches if force push is
+  blocked.
+
+* Performance Fix: Minimize number of advertisedHaves.
++
+By filtering the refs before the objectIds are added to
+advertisedHaves, lots of time can be saved when pushing to complex
+Git repositories.
+
+* Show review comments for unchanged files.
++
+When comparing patch sets and some comment was put in one side, that
+comment was not shown if there was no code changed between the two
+patch sets.
+
+++++
+<style type="text/css">
+#title-page {
+  border-bottom: 0;
+  text-align: center;
+  position: relative;
+  top: 30%;
+  font-size: 60px;
+}
+</style>
+++++
