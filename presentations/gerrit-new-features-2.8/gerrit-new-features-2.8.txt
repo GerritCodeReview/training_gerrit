@@ -11,6 +11,8 @@
 2.8 Release Notes]
 * link:https://gerrit-documentation.storage.googleapis.com/ReleaseNotes/ReleaseNotes-2.8.1.html[
 2.8.1 Release Notes]
+* link:https://gerrit-documentation.storage.googleapis.com/ReleaseNotes/ReleaseNotes-2.8.2.html[
+2.8.2 Release Notes]
 
 * Statistics
 +
@@ -133,8 +135,10 @@ Gerrit Plugins may now
 * send events to the events stream.
 
 == Important Bug Fixes
-* Don’t allow project owners to delete branches if force push is
-  blocked.
+* Don’t allow project owners to delete/create branches if force push
+  is blocked.
+
+* Allow disabling drafts by blocking push on `refs/drafts/*`.
 
 * Performance Fix: Minimize number of advertisedHaves.
 +
