@@ -34,6 +34,24 @@
       "revId": "a410ec2994c8130c676fb836573aedcdb64bebce",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d2ca6290_93219c85",
+        "filename": "presentations/gerrit-new-features-2.8/gerrit-new-features-2.8.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2014-01-31T12:58:36Z",
+      "side": 1,
+      "message": "Done in\n  https://gerrit-review.googlesource.com/54193",
+      "parentUuid": "d2ca6290_d317142e",
+      "revId": "a410ec2994c8130c676fb836573aedcdb64bebce",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
