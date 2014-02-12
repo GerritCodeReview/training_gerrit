@@ -109,6 +109,10 @@ image:../../img/old-change-screen.png[]
 A preference setting allows the user to decide if the new or the old
 change screen should be used.
 
+* In 2.8 the old screen is default.
+* In 2.9 the new screen is default.
+* In later versions (possibly from 2.10) the old screen will be removed.
+
 image:../../img/change-screen-preference.png[]
 
 *WARNING:* The new change screen in 2.8 is still beta.
