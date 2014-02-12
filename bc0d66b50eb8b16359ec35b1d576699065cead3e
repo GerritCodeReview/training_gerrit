@@ -22,6 +22,30 @@
       "revId": "bc0d66b50eb8b16359ec35b1d576699065cead3e",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ef4cddb4_3ce011ea",
+        "filename": "presentations/gerrit-new-features-2.8/gerrit-new-features-2.8.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 159,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-02-12T10:33:32Z",
+      "side": 1,
+      "message": "Agreed.",
+      "parentUuid": "0f693106_b51ba087",
+      "range": {
+        "startLine": 157,
+        "startChar": 0,
+        "endLine": 159,
+        "endChar": 17
+      },
+      "revId": "bc0d66b50eb8b16359ec35b1d576699065cead3e",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
