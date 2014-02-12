@@ -146,13 +146,17 @@ REST API endpoints] were added.
 
 Gerrit Plugins may now
 
-* contribute buttons to various parts of the UI using the UI
+* Contribute buttons to various parts of the UI using the UI
   extension and JavaScript API.
-* provide global capabilities.
-* provide pre-merge validation steps.
-* provide entries in Gerrit’s top menu.
-* provide download schemes and download commands.
-* send events to the events stream.
+* Provide global capabilities.
+* Provide pre-merge validation steps.
+* Provide entries in Gerrit’s top menu.
+* Provide download schemes and download commands.
+* Send events to the events stream.
+
+The new plugin API features are demonstrated in the
+link:https://gerrit-review.googlesource.com/#/admin/projects/plugins/cookbook-plugin[
+Cookbook Plugin].
 
 == Important Bug Fixes
 * Don’t allow project owners to delete/create branches if force push
