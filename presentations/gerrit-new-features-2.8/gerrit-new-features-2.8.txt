@@ -176,6 +176,18 @@ When comparing patch sets and some comment was put in one side, that
 comment was not shown if there was no code changed between the two
 patch sets.
 
+== New Build System
+
+* Gerrit is now built using link:https://github.com/facebook/buck/[Buck]
+rather than Maven.
+
+* The dependency on Maven is not completely removed.  It is still used
+to:
+
+** Install the plugin API artifacts to the developer's local repository
+
+** Deploy the plugin API artifacts to the public repository
+
 ++++
 <style type="text/css">
 #title-page {
