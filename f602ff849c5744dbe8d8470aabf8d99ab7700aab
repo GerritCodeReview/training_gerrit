@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cf5479b3_e3ded282",
+        "filename": "presentations/gerrit-new-features-2.8/gerrit-new-features-2.8.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-02-17T07:28:45Z",
+      "side": 1,
+      "message": "I don\u0027t know what\u0027s wrong here, but if I build the HTML on my Macbook Pro this image does not render.  Instead it shows with the icon representing an image that cannot be found.\n\nAs far as I can see the filename is correct, and I can `ls` it from the command line.\n\nIt works fine on Ubuntu.",
+      "range": {
+        "startLine": 98,
+        "startChar": 0,
+        "endLine": 98,
+        "endChar": 39
+      },
+      "revId": "f602ff849c5744dbe8d8470aabf8d99ab7700aab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
