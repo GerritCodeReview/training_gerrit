@@ -46,6 +46,30 @@
       "revId": "f602ff849c5744dbe8d8470aabf8d99ab7700aab",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8f6fe175_09f8e9ec",
+        "filename": "presentations/gerrit-new-features-2.8/gerrit-new-features-2.8.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-02-17T09:01:07Z",
+      "side": 1,
+      "message": "I don\u0027t see the \u0027@\u0027 character if I look at the directory listing on my Ubuntu box.  I\u0027ll check what it looks like on the Macbook later when I get home.",
+      "parentUuid": "cf7b9935_2bf599f5",
+      "range": {
+        "startLine": 98,
+        "startChar": 0,
+        "endLine": 98,
+        "endChar": 39
+      },
+      "revId": "f602ff849c5744dbe8d8470aabf8d99ab7700aab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
