@@ -118,6 +118,30 @@
       "revId": "f602ff849c5744dbe8d8470aabf8d99ab7700aab",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cf5479b3_c302b627",
+        "filename": "presentations/gerrit-new-features-2.8/gerrit-new-features-2.8.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-02-17T13:47:22Z",
+      "side": 1,
+      "message": "I tried opening the image in an editor and saving it again, but that also did not change anything.\n\nAnd it is also not rendered in Safari.  (so far was using Chrome).\n\nVery strange.",
+      "parentUuid": "cf7b9935_eb82313e",
+      "range": {
+        "startLine": 98,
+        "startChar": 0,
+        "endLine": 98,
+        "endChar": 39
+      },
+      "revId": "f602ff849c5744dbe8d8470aabf8d99ab7700aab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
