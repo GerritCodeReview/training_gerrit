@@ -94,6 +94,30 @@
       "revId": "f602ff849c5744dbe8d8470aabf8d99ab7700aab",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cf7b9935_eb82313e",
+        "filename": "presentations/gerrit-new-features-2.8/gerrit-new-features-2.8.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2014-02-17T13:28:17Z",
+      "side": 1,
+      "message": "Interesting, but this sounds like these attributes are unrelated to the picture not being rendered. Right now I have no idea what else could be causing this.",
+      "parentUuid": "8f6fe175_4917c165",
+      "range": {
+        "startLine": 98,
+        "startChar": 0,
+        "endLine": 98,
+        "endChar": 39
+      },
+      "revId": "f602ff849c5744dbe8d8470aabf8d99ab7700aab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
