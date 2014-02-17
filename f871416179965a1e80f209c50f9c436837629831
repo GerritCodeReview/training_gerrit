@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "af6ae563_eadea782",
+        "filename": "presentations/gerrit-new-features-2.8/gerrit-new-features-2.8.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-02-17T07:18:53Z",
+      "side": 1,
+      "message": "install/deploy? in Maven terminology \"install\" \u003d\u003e local Maven repository, \"deploy\" \u003d\u003e remote Maven repository. In gerrit build we are using both.",
+      "range": {
+        "startLine": 184,
+        "startChar": 25,
+        "endLine": 184,
+        "endChar": 31
+      },
+      "revId": "f871416179965a1e80f209c50f9c436837629831",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
