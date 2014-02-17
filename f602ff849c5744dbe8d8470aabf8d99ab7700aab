@@ -22,6 +22,30 @@
       "revId": "f602ff849c5744dbe8d8470aabf8d99ab7700aab",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cf7b9935_2bf599f5",
+        "filename": "presentations/gerrit-new-features-2.8/gerrit-new-features-2.8.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2014-02-17T08:52:12Z",
+      "side": 1,
+      "message": "Strange, it works on my Mac.\n\nLooking at the permissions of this file\n\n  -rw-r--r--@\n\nthere is this \u0027@\u0027 character in the end which is not shown for most of the other files. [1] says that this indicates whether an alternate access method such as an access control list applies to the file. I have no idea what exactly this means and how to change it, but it may be related to this problem. At least I can\u0027t see any other thing which is special about this file.\n\n[1] http://cygwin.com/ml/cygwin/2007-09/msg00459.html",
+      "parentUuid": "cf5479b3_e3ded282",
+      "range": {
+        "startLine": 98,
+        "startChar": 0,
+        "endLine": 98,
+        "endChar": 39
+      },
+      "revId": "f602ff849c5744dbe8d8470aabf8d99ab7700aab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
