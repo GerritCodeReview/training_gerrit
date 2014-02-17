@@ -70,6 +70,30 @@
       "revId": "f602ff849c5744dbe8d8470aabf8d99ab7700aab",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8f6fe175_4917c165",
+        "filename": "presentations/gerrit-new-features-2.8/gerrit-new-features-2.8.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-02-17T13:16:59Z",
+      "side": 1,
+      "message": "According to [1] the @ shows that the file has extended attributes.  I see it for both the old-change-screen and new-change-screen files.\n\nIf I run `xattr` to show the extended attributes I can see it\u0027s something related to Apple\u0027s quarantine feature:\n\n  xattr ../../img/old-change-screen.png\n  com.apple.quarantine\n\nI can remove it with:\n\n xattr -d com.apple.quarantine ../../img/old-change-screen.png\n\nBut that does not make the image render, and `git status` shows no difference on the file.\n\n[1] http://blog.chilly.ca/?p\u003d141",
+      "parentUuid": "8f6fe175_09f8e9ec",
+      "range": {
+        "startLine": 98,
+        "startChar": 0,
+        "endLine": 98,
+        "endChar": 39
+      },
+      "revId": "f602ff849c5744dbe8d8470aabf8d99ab7700aab",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
