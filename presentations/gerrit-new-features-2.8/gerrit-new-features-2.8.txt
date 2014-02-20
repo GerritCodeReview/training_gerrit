@@ -65,10 +65,11 @@
 The change search in Gerrit is now backed by a secondary index which can
 deliver results much faster than the database.
 
-Lucene and Solr indexes are supported.
+* Lucene and Solr Cloud indexes are supported
 
-In 2.8 the secondary index is optional, but from 2.9 it will be mandatory
-and the default will be Lucene.
+* In 2.8 the secondary index is optional
+
+* From 2.9 it will be mandatory; the default will be Lucene
 
 == New search operators
 
