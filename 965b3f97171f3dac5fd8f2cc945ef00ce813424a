@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2f8fd5ae_be559919",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2014-02-20T13:35:02Z",
+      "side": 1,
+      "message": "This is nasty :( I knew IE has issues with this, but I thought other browsers were just fine with it.",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 21,
+        "endChar": 9
+      },
+      "revId": "965b3f97171f3dac5fd8f2cc945ef00ce813424a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0fc771d6_a57d9e95",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2014-02-20T13:35:02Z",
+      "side": 1,
+      "message": "Yes, having a single html file for distribution was of course the intension here. Especially for the user conference it would be nice to be able to provide this one file for download.",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 37
+      },
+      "revId": "965b3f97171f3dac5fd8f2cc945ef00ce813424a",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
