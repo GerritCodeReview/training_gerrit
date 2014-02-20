@@ -31,11 +31,10 @@
 +
 &#x278a; without merge commits
 
-== Copy review labels on trivial rebase or if there was no code change
+== Labels can be configured to copy scores forward to new patch sets
 
 * link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.8/config-labels.html#label_copyAllScoresOnTrivialRebase[
-  Labels can be configured to copy scores forward to new patch sets
-  for trivial rebases.]
+  For trivial rebases]
 +
 ----
 [label "Code-Review"]
@@ -50,8 +49,7 @@
 ----
 
 * link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.8/config-labels.html#label_copyAllScoresIfNoCodeChange[
-  Labels can be configured to copy scores forward to new patch sets if
-  there is no code change (e.g. only the commit message was edited).]
+  If there is no code change (e.g. only the commit message was edited)]
 +
 ----
 [label "Verified"]
