@@ -1,7 +1,6 @@
 = What's new in Gerrit 2.9
 :backend: slidy
 :max-width: 70em
-:data-uri:
 
 [[title-page]]
 == What's new in Gerrit 2.9
