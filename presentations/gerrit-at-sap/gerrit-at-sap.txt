@@ -1,0 +1,456 @@
+= Gerrit at SAP
+:backend: slidy
+:max-width: 70em
+:data-uri:
+
+[[title-page]]
+== Gerrit at SAP
+
+== Gerrit at SAP
+
+* Introduction
+* Project Administration & Self-Services
+* Future Plans
+
+[[title-page]]
+== Introduction
+
+== SAP AG
+
+* market leader in enterprise application software
+* more than 65.500 employees
+* more than 100.000 customers and 12 million users
+* office locations in more than 130 countries
+
+== Gerrit at SAP
+
+* using Gerrit since 2010
+* 2 Gerrit maintainers
+* contributing to JGit and EGit
+
+=== Main instance (2.7)
+
+* mainly small projects (~70GB)
+* number of projects: > 5K
+* number of users: ~ 8K
+* number of changes: ~ 400K
+* virtual machine: 16 CPU, 64GB RAM
+
+=== Special instance (2.5.2)
+
+* 1 huge project (~15GB)
+* number of users: > 2K
+
+=== &nbsp;
+Further Gerrit instances in preparation.
+
+[[title-page]]
+== Project Administration & Self-Services
+
+== Project Portal
+
+* Central index of all projects
++
+image:../../img/project-portal.png[]
+
+== Project Search
+
+.Quick Search
+image:../../img/project-portal-search-1.png[]
+
+.Result
+image:../../img/project-portal-search-2.png[]
+
+== Project Info
+
+* Project Team
+* Links to Source Code, Build Server, Issue Tracker etc.
++
+image:../../img/project-portal-project-info.png[]
+
+== Contribute to a project
+
+1. find project in Project Portal
+2. clone the Git repository
+3. make a change and push to Gerrit for review
+
+== Contribute to a project
+
+Everyone at SAP can contribute to any SAP project &#x278a;!
+
+* Committer/Contributor model
+
+~&#x278a; any project hosted in Gerrit~
+
+== Project Creation
+
+* Self-Service for creating new projects via SAP Project Portal
++
+image:../../img/project-portal-project-creation.png[]
+
+== Skalli
+
+image:../../img/skalli.png[]
+
+* Open Source project management tool
++
+link:http://www.eclipse.org/skalli/[http://www.eclipse.org/skalli/]
+
+* SAP Project Portal = Skalli + SAP specific extensions
+
+== Default Access Rights
+
+* The project creator becomes project owner
+* The project owner group is self-owned
+* By default Project Owners can approve, verify, submit and push tags
+* Everyone can push for review and forge authors
++
+.Project access rights
+image:../../img/project-access-rights.png[]
++
+.Inherited default access rights
+image:../../img/default-access-rights.png[]
+
+== Default Access Rights
+
+* Teams can start working without touching the access rights.
+
+== Default Access Rights
+
+* Teams can start working without touching the access rights.
+* Teams can adapt the access rights to their needs
+** enables team specific workflows (e.g. bypass code review)
+
+== Default Access Rights
+
+* Teams can start working without touching the access rights.
+* Teams can adapt the access rights to their needs
+** enables team specific workflows (e.g. bypass code review)
+* Teams can configure custom Prolog rules, e.g.:
+** 2 teams collaborate on 1 project, core team has to approve changes
+   in core files
+** enforce 4-eyes-principle by prohibiting merging own changes
+
+== Default Access Rights
+
+* Best practices about which access rights should be assigned to which
+  roles are documented.
+
+== Default Access Rights
+
+* Best practices about which access rights should be assigned to which
+  roles are documented.
+* Everyone can create new groups in Gerrit.
++
+image:../../img/create-group-capability.png[height=80]
+
+== Default Access Rights
+
+* Best practices about which access rights should be assigned to which
+  roles are documented.
+* Everyone can create new groups in Gerrit.
++
+image:../../img/create-group-capability.png[height=80]
+
+* By default new groups are visible to all users:
++
+.gerrit.config
+----
+  [groups]
+    newGroupsVisibleToAll = true
+----
+
+* `refs/meta/config` is readable for all
++
+image:../../img/refs-meta-config-access-right.png[height=100]
+
+== Decentralized Project Administration
+
+* low central administration effort
++
+2 admins spend a few hours per week on Gerrit administration
+
+== SAP Product Standards
+
+Requirements for development infrastructures
+
+* security
+* traceability
+* etc.
+
+== SAP Product Standards
+
+For each code change it must be possible to find the person that was
+doing the change.
+
+* `Forge Committer` is BLOCKED on `All-Projects`
++
+image:../../img/block-forge-committer.png[height=150]
+
+== SAP Product Standards
+
+Every release build must be reproducable.
+
+* Every release build is tagged.
+* Release tags must never be deleted
++
+`Force Push` for release tags is BLOCKED on `All-Projects`
++
+image:../../img/block-force-push.png[height=100]
+
+== SAP Product Standards
+
+Traceability
+
+* ref logs never expire
++
+GC script automatically sets:
++
+----
+  gc.reflogexpire = never
+  gc.reflogexpireunreachable = never
+----
+
+* `reviewnotes` plugin is used
++
+image:../../img/block-push-on-review-notes.png[height=100]
+
+== SAP Product Standards
+
+Special processes are enforced for release branches:
+
+* code review mandatory
+* release notes for customers
+* etc.
+
+== Self-Service for Service User Creation
+
+* many teams use Jenkins with Gerrit Trigger Plugin for verification
+  of open changes
+* for each Jenkins instance a new service user needs to be created
+* service users must not be able to push commits
++
+.serviceuser Plugin (Gerrit 2.9)
+image:../../img/service-user-plugin.png[]
+
+== Configuration of serviceuser Plugin
+
+image:../../img/service-user-plugin-administration.png[]
+
+== Observed misuses of Gerrit
+
+* storage of Linux ISO images
+* backup of database dumps
+* (unintentional) upload of heap dumps
+* usage as general purpose backup for arbitary files
+
+== Protect against misuse of Gerrit
+
+* Files larger than 20 MB cannot be pushed
++
+----
+  [receive]
+    maxObjectSizeLimit = 20 m
+----
+
+* Quota plugin
+** limit max repository size
+
+== Administration Pain Points
+
+* project deletion
++
+support to archive repositories is missing
+
+* project renaming
+
+* accidental removal of owner rights for project / group
+
+* configuration of periodical fetches for forked open source projects
+
+== Summary - Project Administration & Self-Services
+
+* decentralized project administration
+** maximal freedom for teams to customize their workflows
+** low central administration effort
+
+* enforcement of central requirements
+** use BLOCK rules on access rights
+
+* Self-Services
+** serviceuser plugin
+
+[[title-page]]
+== Future Plans
+
+== Future Plans
+
+Offer Gerrit as Git Service in the SAP HANA Cloud Platform.
+
+== Future Plans
+
+Offer Gerrit as Git Service in the SAP HANA Cloud Platform.
+
+* *SAP HANA Cloud Platform*: SAP platform that enables customers and
+  developers to build, extend and run applications on SAP HANA in the
+  cloud.
+
+== Future Plans
+
+Offer Gerrit as Git Service in the SAP HANA Cloud Platform.
+
+* *SAP HANA Cloud Platform*: SAP platform that enables customers and
+  developers to build, extend and run applications on SAP HANA in the
+  cloud.
+* *SAP HANA* is an in-memory, column-oriented, relational database
+  management system
+
+== Helium
+
+* HTML5 applications
+** static resources
+** connect to existing backends via REST
+* applications are directly served from Git repositories
+* multiple versions can exist in parallel
+* online development in the cloud (Web IDE)
+
+image:../../img/helium.png[]
+
+== Requirements for Gerrit
+
+* must run on SAP HANA Cloud Platform
+** enabling of service-to-service communication
+** roles are assigned outside of Gerrit (e.g. Gerrit admin role)
+
+== Requirements for Gerrit
+
+* must run on SAP HANA Cloud Platform
+
+* isolation of Git repositories of different customers
+** support for multi tenancy
+
+== Requirements for Gerrit
+
+* must run on SAP HANA Cloud Platform
+
+* isolation of Git repositories from different customers
+
+* protection against misuse
+** enforcement of quotas per tenant
+
+== Requirements for Gerrit
+
+* must run on SAP HANA Cloud Platform
+
+* isolation of Git repositories from different customers
+
+* protection against misuse
+
+* metering
+
+== Requirements for Gerrit
+
+* must run on SAP HANA Cloud Platform
+
+* isolation of Git repositories of different customers
+
+* protection against misuse
+
+* metering
+
+* unattended installation and upgrade
+** automatic schema and index upgrades
+** automatic plugin installation
+** packaging of different configuration and choosing one based on a
+   system property
+
+== Multi Tenancy Support in Gerrit
+
+Map tenant to top-level folder in Gerrit.
+
+== Multi Tenancy Support in Gerrit
+
+Map tenant to top-level folder in Gerrit.
+
+image:../../img/tenant-projects.png[]
+
+== Multi Tenancy Support in Gerrit
+
+Tenant users must only see projects of their own tenant.
+
+.ProjectControl
+----
+  /** Can this user see this project exists? */
+  public boolean isVisible() {
+    if (user instanceof InternalUser && !isHidden()) {
+      return true;
+    }
+
+    if (!canPerformOnAnyRef(Permission.READ) || isHidden()) {
+      return false;
+    }
+
+    Project p = state.getProject();
+    for (ProjectFilter e : visibilityExtensions) {
+      if (!e.accept(p)) {
+        return false;
+      }
+    }
+    return true;
+  }
+----
+
+.ProjectFilter
+----
+  /**
+   * An extension to the standard project visibility check
+   */
+  public interface ProjectFilter {
+    public boolean accept(Project project);
+  }
+----
+
+.Tenant ProjectFilter
+----
+  class TenantAsTopLevelFolder implements ProjectFilter {
+    private final Provider<CurrentUser> currentUser;
+    private final DomainDbClient checker;
+
+    @Inject
+    public TenantAsTopLevelFolder(Provider<CurrentUser> currentUser,
+        DomainDbClient checker) {
+      this.currentUser = currentUser;
+      this.checker = checker;
+    }
+
+    @Override
+    public boolean accept(Project project) {
+      if (currentUser.get().getCapabilities().canAdministrateServer()) {
+        return true;
+      }
+
+      String projectName = project.getName();
+      int n = projectName.indexOf('/');
+      if (n == -1) {
+        return false;
+      }
+      String tenant = projectName.substring(0, n);
+      String userName = currentUser.get().getUserName();
+      return checker.hasGitAccess(userName, tenant);
+     }
+  }
+----
+
+== Questions?
+
+++++
+<style type="text/css">
+#title-page {
+  border-bottom: 0;
+  text-align: center;
+  position: relative;
+  top: 30%;
+  font-size: 60px;
+}
+</style>
+++++
