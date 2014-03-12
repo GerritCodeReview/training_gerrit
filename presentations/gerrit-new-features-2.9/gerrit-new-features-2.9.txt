@@ -1,0 +1,309 @@
+= What's new in Gerrit 2.9
+:backend: slidy
+:max-width: 70em
+:data-uri:
+
+[[title-page]]
+== What's new in Gerrit 2.9
+
+== What's new in Gerrit 2.9
+
+* Statistics
++
+[width="50%",cols=">s,^m,^m,^m,^m,^m,^m",options="header"]
+|==========================
+|                 |Gerrit 2.9-RC0 |Gerrit 2.8 |Gerrit 2.7 |Gerrit 2.6 |Gerrit 2.5 |Gerrit 2.4
+|commits &#x278a; |966            |1373       |272        |1301       |508        |122
+|resolved issues
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.9[43]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.8[72]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.7[9]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.6[85]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.5[51]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.4[35]
+|contributors     |37             |54         |31         |56         |34         |22
+|==========================
++
+&#x278a; not including merge commits
+
+== New Change Screen
+
+The Change Screen was completely redesigned and is now based on the
+Gerrit REST API.
+
+* By default users get the new change screen.
++
+image:../../img/new-change-screen-welcome-bar.png[]
+
+* The old change screen
+** is still available
++
+image:../../img/change-view-preference.png[]
+
+** will be removed with the next release
+
+== New Change Screen
+
+image:../../img/new-change-screen-2.9.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-commit-message.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-edit-commit-message.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-commit-info.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-info.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-info-block.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-info-block-owner.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-info-block-reviewers.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-info-block-project-branch-topic.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-info-block-submit-strategy.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-info-block-last-update.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-info-block-actions.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-info-block-labels.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-merge-conflict.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-merge-change.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-files.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-file-list-comments.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-file-list-rename.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-file-list-repeating-paths.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-patch-sets.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-patch-set-list.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-download.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-download-commands.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-included-in.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-included-in-list.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-star.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-permalink.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-related-changes.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-conflicts-with.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-same-topic.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-cherry-picks.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-reply.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-replying.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-quick-approve.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-history.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-reply-to-summary-comment.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-replied.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-inline-comments.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-update.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-plugin-extension-points.png[]
+
+== Old Change Screen (for comparison)
+
+image:../../img/old-change-screen-2.9.png[]
+
+== New Side-by-Side Diff Screen
+
+* based on link:http://codemirror.net/[CodeMirror]
+
+image:../../img/new-side-by-side-diff-screen.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-project-and-file.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-syntax-coloring.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-scrollbar.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-inline-comments.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-reply.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-replied.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-comment.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-commented.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-file-level-comment.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-file-level-commented.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-expand-skipped-lines.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-red-bar.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-column.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-search.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-reviewed.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-choose-patch-sets.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-navigation.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-preferences.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-preferences-popup.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-dark-theme.png[]
+
+== Old Side-by-Side Diff Screen (for comparison)
+
+image:../../img/old-side-by-side-diff-screen.png[]
+
+++++
+<style type="text/css">
+#title-page {
+  border-bottom: 0;
+  text-align: center;
+  position: relative;
+  top: 30%;
+  font-size: 60px;
+}
+</style>
+++++
