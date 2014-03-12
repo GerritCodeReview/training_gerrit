@@ -1,0 +1,552 @@
+= What's new in Gerrit 2.9
+:backend: slidy
+:max-width: 70em
+:data-uri:
+
+[[title-page]]
+== What's new in Gerrit 2.9
+
+== What's new in Gerrit 2.9
+
+* Statistics
++
+[width="50%",cols=">s,^m,^m,^m,^m,^m,^m",options="header"]
+|==========================
+|                 |Gerrit 2.9-RC0 |Gerrit 2.8 |Gerrit 2.7 |Gerrit 2.6 |Gerrit 2.5 |Gerrit 2.4
+|commits &#x278a; |966            |1373       |272        |1301       |508        |122
+|resolved issues
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.9[43]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.8[72]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.7[9]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.6[85]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.5[51]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.4[35]
+|contributors     |37             |54         |31         |56         |34         |22
+|==========================
++
+&#x278a; not including merge commits
+
+== New Change Screen
+
+The Change Screen was completely redesigned and is now based on the
+Gerrit REST API.
+
+* By default users get the new change screen.
++
+image:../../img/new-change-screen-welcome-bar.png[]
+
+* The old change screen
+** is still available
++
+image:../../img/change-view-preference.png[]
+
+** will be removed with the next release
+
+== New Change Screen
+
+image:../../img/new-change-screen-2.9.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-commit-message.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-edit-commit-message.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-commit-info.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-info.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-info-block.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-info-block-owner.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-info-block-reviewers.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-info-block-project-branch-topic.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-info-block-submit-strategy.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-info-block-last-update.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-info-block-actions.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-info-block-labels.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-merge-conflict.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-merge-change.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-files.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-file-list-comments.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-file-list-rename.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-file-list-repeating-paths.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-patch-sets.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-patch-set-list.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-download.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-download-commands.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-included-in.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-included-in-list.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-star.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-permalink.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-related-changes.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-conflicts-with.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-same-topic.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-cherry-picks.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-reply.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-replying.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-quick-approve.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-history.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-reply-to-summary-comment.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-replied.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-inline-comments.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-change-update.png[]
+
+== New Change Screen
+
+image:../../img/new-change-screen-plugin-extension-points.png[]
+
+== Old Change Screen (for comparison)
+
+image:../../img/old-change-screen-2.9.png[]
+
+== New Side-by-Side Diff Screen
+
+* based on link:http://codemirror.net/[CodeMirror]
+
+image:../../img/new-side-by-side-diff-screen.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-project-and-file.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-syntax-coloring.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-scrollbar.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-inline-comments.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-reply.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-replied.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-comment.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-commented.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-file-level-comment.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-file-level-commented.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-expand-skipped-lines.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-red-bar.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-column.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-search.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-reviewed.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-choose-patch-sets.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-navigation.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-preferences.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-preferences-popup.png[]
+
+== New Side-by-Side Diff Screen
+
+image:../../img/new-side-by-side-diff-screen-dark-theme.png[]
+
+== Old Side-by-Side Diff Screen (for comparison)
+
+image:../../img/old-side-by-side-diff-screen.png[]
+
+== Change List
+
+image:../../img/change-list-merge-conflict.png[]
+
+== Change List
+
+image:../../img/change-list-change-size.png[]
+
+== Change List
+
+image:../../img/change-list-change-size-no-bars.png[]
+
+== Change List
+
+image:../../img/gerrit-open-changes.png[]
+
+== Change List
+
+image:../../img/gerrit-merged-changes.png[]
+
+== Custom Dashboard
+
+image:../../img/custom-dashboard-mergeable.png[]
+
+== Custom Dashboard
+
+image:../../img/custom-dashboard-parentproject.png[]
+
+== Custom Dashboard
+
+image:../../img/custom-dashboard-drilldown.png[]
+
+== Clone Command with commit-msg Hook
+
+image:../../img/clone-command-with-commit-msg-hook.png[]
+
+== Change HEAD
+
+image:../../img/change-head.png[]
+image:../../img/change-head-2.png[]
+
+== Change Parent Project
+
+image:../../img/change-parent-project.png[]
+
+== Project List
+
+image:../../img/project-state.png[]
+
+== Run GC
+
+image:../../img/run-gc.png[]
+
+== Remove Reviewer
+
+image:../../img/remove-reviewer.png[]
+
+image:../../img/remove-reviewer-change-message.png[]
+
+== User Preferences
+
+image:../../img/user-preferences-uk-date-format.png[]
+
+== Include Topic in Merge Commit Messages
+
+image:../../img/topic-in-merge-commit.png[]
+
+== Return Change URL on Push if Change is updated
+
+image:../../img/return-change-url-on-push-if-change-updated.png[]
+
+== Documentation
+
+* Restructuring of Documentation Index
++
+image:../../img/documentation-index.png[]
+
+== Documentation Search
+
+* Search Box
++
+image:../../img/documentation-search-box.png[]
+
+* Search Result
++
+image:../../img/documentation-search-result.png[]
+
+* link:https://gerrit-review.googlesource.com/Documentation/rest-api-documentation.html[
+  REST endpoint to search in Gerrit documentation]
+
+* link:https://gerrit-review.googlesource.com/Documentation/cmd-apropos.html[
+  SSH command to search in Gerrit documentation]
+
+== Plugin Highlights
+
+* Plugin API to invoke the REST API
+
+* link:https://gerrit-review.googlesource.com/Documentation/dev-plugins.html#_add_screen[
+  Plugins can add entire Screens to Gerrit]
++
+image:../../img/plugin-screen.png[]
+
+== Plugin Highlights
+
+* link:https://gerrit-review.googlesource.com/Documentation/dev-plugins.html#settings-screen[
+  Plugins can have Setting Screen which is linked from Plugin List
+  Screen]
++
+image:../../img/plugin-settings-screen.png[]
+
+* Support to edit Project Plugin Configuration Parameters in UI
++
+image:../../img/plugin-project-configuration.png[]
+
+== Questions?
+
+[[title-page]]
+== Backup Slides
+
+== Search
+
+* new Search Operators
+** link:https://gerrit-review.googlesource.com/Documentation/user-search.html#is[
+   is:mergeable]
++
+Changes that have no merge conflicts and could be merged into the
+destination branch.
+
+** link:https://gerrit-review.googlesource.com/Documentation/user-search.html#parentproject[
+   parentproject:<PROJECT>]
++
+Finds changes of in PROJECT or in one of the child projects of
+PROJECT.
+
+** link:https://gerrit-review.googlesource.com/Documentation/user-search.html#conflicts[
+   conflicts:<CHANGE>]
++
+Changes that conflict with CHANGE.
+
+** Operators for absolute last-updated-on Search
++
+Pagination uses Offsets instead of Sortkey
+
+*** link:https://gerrit-review.googlesource.com/Documentation/user-search.html#before_until[
+    before:<TIME> / until:<TIME>]
+*** link:https://gerrit-review.googlesource.com/Documentation/user-search.html#after_since[
+    after:<TIME> / since:<TIME>]
+
+* Support exact match on File Parts in
+  link:https://gerrit-review.googlesource.com/Documentation/user-search.html#file[
+  file:<NAME>] operator
+
+* Query shorthands
+** o = owner
+** r = reviewer
+** p = project
+** f = file
+
+== Access Rights
+
+* Global Capability for viewing all Accounts
++
+image:../../img/global-capability-view-all-accounts.png[]
+
+* New `Change Owner` group
+
+* Support `on behalf of` for submit Operation
+
+== Administration
+
+* *WARNING*: Query Support for SQL index is deleted!
+* Init step for installing the 'Verified' Label
+* Default Submit Type for newly created Projects can be configured
+* Interactive Jython Shell
+* `sshd_log` and `httpd_log` can use log4j config
+* Draft Workflow can be disabled
+* Configuration for checking of Received Objects
+* SSH Command `create-branch` for creating Branches
+* Stable CSS class names
+
+== NoteDB
+
+Move Data from Database into Git Notes:
+
+* PatchSetApprovals
+
+== REST API
+
+* link:https://gerrit-review.googlesource.com/Documentation/rest-api-projects.html#get-content[
+  REST endpoint to get content of a file from HEAD of a branch]
+
+== Plugin Administration
+
+* link:https://gerrit-review.googlesource.com/Documentation/config-gerrit.html#plugins.allowRemoteAdmin[
+  Remote Plugin Installation is by default disabled]
+
+== Plugin Extension Points
+
+* "Message Of The Day"
+
+* Validation for
+** project creation
+** group creation
+
+* link:https://gerrit-review.googlesource.com/Documentation/dev-plugins.html#init_step[
+  Init steps can do initialisation after the site is created]
+** `All-Projects` `project.config` can be read and edited
+
+* link:https://gerrit-review.googlesource.com/Documentation/dev-plugins.html#receive-pack[
+  Initialization of ReceivePack]
+
+* link:https://gerrit-review.googlesource.com/Documentation/dev-plugins.html#post-receive-hook[
+  Registration of PostReceiveHooks]
+
+* Registration of Root Level Commands
+
+* link:https://gerrit-review.googlesource.com/Documentation/config-gerrit.html#database.dataSourceInterceptorClass[
+  DataSource Interception]
+
+== JavaScript Plugins
+
+* link:https://gerrit-review.googlesource.com/Documentation/js-api.html#self_on[
+  JavaScript Callback]
+** Gerrit.on('history', f)
+** Gerrit.on('submitchange', f)
+** Gerrit.on('showchange', f)
+
+* `change_plugins` element on new Change Screen
+
+== Replication Plugin
+
+* Support Replication of HEAD Updates
+* Sends Stream Events for Ref Replication
+* Never Replicate automerge-cache Commits
+* Default push refSpec is changed to 'refs/\*:refs/*' (non-forced push)
+* Replications failed due to "failed to lock" errors are retried
+* Config Changes can be detected and replication is automatically
+  restarted
+
+== Important Fixes
+
+* link:https://gerrit-review.googlesource.com/53387[Fix Online Reindexing]
+
+++++
+<style type="text/css">
+#title-page {
+  border-bottom: 0;
+  text-align: center;
+  position: relative;
+  top: 30%;
+  font-size: 60px;
+}
+</style>
+++++
