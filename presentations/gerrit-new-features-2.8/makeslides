@@ -1,1 +1,20 @@
-asciidoc -a icons -a iconsdir=/opt/local/etc/asciidoc/images/icons gerrit-new-features-2.8.txt
+#!/bin/bash -ex
+
+ICON_DIRS=("/etc/asciidoc/images/icons" \
+  "/opt/local/etc/asciidoc/images/icons" \
+  "/usr/local/etc/asciidoc/images/icons")
+
+for icon_dir in "${ICON_DIRS[@]}"
+do
+  if [ -d $icon_dir ] ; then
+    ICON_DIR=$icon_dir
+    break
+  fi
+done
+
+OPTIONS=""
+if [ ! -z "$ICON_DIR" ]; then
+  OPTIONS="$OPTIONS -a icons -a iconsdir=$ICON_DIR"
+fi
+
+asciidoc $OPTIONS gerrit-new-features-2.8.txt
