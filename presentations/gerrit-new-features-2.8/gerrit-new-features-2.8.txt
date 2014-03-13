@@ -28,7 +28,7 @@
 |contributors     |54         |31         |56         |34         |22
 |==========================
 +
-&#x278a; without merge commits
+&#x278a; not including merge commits
 
 == Labels can be configured to copy scores forward to new patch sets
 
