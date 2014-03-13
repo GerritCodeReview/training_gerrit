@@ -16,6 +16,24 @@
       "revId": "969f19855bbb3f6bc5060862d6ddd79b8a1d6353",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7cd50dff_0043062e",
+        "filename": "img/new-change-screen-download-commands.png",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2014-03-13T10:13:00Z",
+      "side": 1,
+      "message": "Yes, I don\u0027t have the very latest commits yet. Will update and renew this screenshot. Thanks for spotting this.",
+      "parentUuid": "bccb0565_220acef1",
+      "revId": "969f19855bbb3f6bc5060862d6ddd79b8a1d6353",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
