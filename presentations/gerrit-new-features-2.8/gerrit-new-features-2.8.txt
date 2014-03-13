@@ -113,7 +113,9 @@ change screen should be used.
 
 image:../../img/change-screen-preference.png[]
 
-*WARNING:* The new change screen in 2.8 is still beta.
+[WARNING]
+====
+The new change screen in 2.8 is still beta.
 
 * Not all features that the old change screen supports are available
   on the new change screen.
@@ -121,6 +123,7 @@ image:../../img/change-screen-preference.png[]
   look different.
 * There are known issues with the new change screen that are fixed
   only in Gerrit 2.9
+====
 
 == New features of new Change Screen / new Side-By-Side Diff Screen
 
@@ -130,9 +133,11 @@ image:../../img/change-screen-preference.png[]
 * For identical files the reviewed flag is automatically copied to
   new patch sets.
 
-*WARNING:* +
+[TIP]
+====
 To insert comments in the new Side-By-Side Diff Screen select a code
 block and press 'c'. Inserting a comment by double click does not work!
+====
 
 == REST API
 
