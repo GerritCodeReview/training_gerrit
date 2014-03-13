@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "bccb0565_c2fa028e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2014-03-13T15:41:12Z",
+      "side": 1,
+      "message": "The new side-by-side screen is now also described but I cannot upload the new patch set because the screenshots are too big. Max file size is 418696 bytes, but gerrit-review at most allows 262144 bytes :(",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 59
+      },
+      "revId": "969f19855bbb3f6bc5060862d6ddd79b8a1d6353",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bccb0565_220acef1",
         "filename": "img/new-change-screen-download-commands.png",
         "patchSetId": 1
@@ -67,6 +90,24 @@
       "side": 1,
       "message": "Well, that\u0027s one of the highlights of upcoming release and it was first thing i checked: so you can imagine my disappointment... ;-)",
       "parentUuid": "7cd50dff_80f2b6bd",
+      "revId": "969f19855bbb3f6bc5060862d6ddd79b8a1d6353",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bccb0565_a2fdfe88",
+        "filename": "img/new-change-screen-download-commands.png",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2014-03-13T15:41:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7cd50dff_a0d6da14",
       "revId": "969f19855bbb3f6bc5060862d6ddd79b8a1d6353",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
