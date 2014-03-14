@@ -73,6 +73,30 @@
     },
     {
       "key": {
+        "uuid": "1c733125_052b329a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1001240
+      },
+      "writtenOn": "2014-03-14T07:54:51Z",
+      "side": 1,
+      "message": "Increased to 512K.",
+      "parentUuid": "bccb0565_02f5ca9a",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 59
+      },
+      "revId": "969f19855bbb3f6bc5060862d6ddd79b8a1d6353",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bccb0565_220acef1",
         "filename": "img/new-change-screen-download-commands.png",
         "patchSetId": 1
