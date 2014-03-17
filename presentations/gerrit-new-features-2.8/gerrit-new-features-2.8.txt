@@ -96,11 +96,26 @@ deliver results much faster than the database.
 The Change Screen was completely redesigned and is now based on the
 Gerrit REST API.
 
-.New Change Screen
-image:../../img/new-change-screen.png[]
+* In the new Side-By-Side Diff Screen comments can be added on code
+  blocks.
 
-.Old Change Screen
-image:../../img/old-change-screen.png[]
+** To insert comments in the new Side-By-Side Diff Screen select a code
+   block and press 'c'.
++
+Inserting a comment by double click does not work!
+
+* There is a new button to cherry-pick a change to another branch.
+* For identical files the reviewed flag is automatically copied to
+  new patch sets.
+
+WARNING: The new change screen in 2.8 is still beta.
+
+* Not all features that the old change screen supports are available
+  on the new change screen.
+* The design is not final yet and with Gerrit 2.9 some things will
+  look different.
+* There are known issues with the new change screen that are fixed
+  only in Gerrit 2.9
 
 == Change Screen Preference
 
@@ -113,31 +128,13 @@ change screen should be used.
 
 image:../../img/change-screen-preference.png[]
 
-[WARNING]
-====
-The new change screen in 2.8 is still beta.
+== New Change Screen screenshot
 
-* Not all features that the old change screen supports are available
-  on the new change screen.
-* The design is not final yet and with Gerrit 2.9 some things will
-  look different.
-* There are known issues with the new change screen that are fixed
-  only in Gerrit 2.9
-====
+.New Change Screen
+image:../../img/new-change-screen.png[]
 
-== New features of new Change Screen / new Side-By-Side Diff Screen
-
-* In the new Side-By-Side Diff Screen comments can be added on code
-  blocks.
-* There is a new button to cherry-pick a change to another branch.
-* For identical files the reviewed flag is automatically copied to
-  new patch sets.
-
-[TIP]
-====
-To insert comments in the new Side-By-Side Diff Screen select a code
-block and press 'c'. Inserting a comment by double click does not work!
-====
+.Old Change Screen
+image:../../img/old-change-screen.png[]
 
 == REST API
 
