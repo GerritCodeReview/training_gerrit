@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bcc06569_face69a4",
+        "filename": "presentations/gerrit-new-features-2.9/gerrit-new-features-2.9.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 465,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2014-03-18T21:12:51Z",
+      "side": 1,
+      "message": "Here it is :-)",
+      "revId": "0b3b4f9842aaffff312297ca7e7e01f7dec41050",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
