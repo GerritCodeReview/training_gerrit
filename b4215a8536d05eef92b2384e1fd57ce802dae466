@@ -16,6 +16,24 @@
       "revId": "b4215a8536d05eef92b2384e1fd57ce802dae466",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9cc5617b_79914785",
+        "filename": "presentations/gerrit-at-sap/gerrit-at-sap.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2014-03-18T07:23:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3cab959f_be869950",
+      "revId": "b4215a8536d05eef92b2384e1fd57ce802dae466",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
