@@ -156,12 +156,21 @@ Gerrit Plugins may now
 * Provide global capabilities.
 * Provide pre-merge validation steps.
 * Provide entries in Gerrit’s top menu.
-* Provide download schemes and download commands.
+* Provide download schemes and download commands (for changes).
+
+** Core download schemes and commands for changes are now provided by
+the `download_commands` plugin.
+
+** Project download commands are still only provided in core Gerrit
+and cannot be added by plugins.
+
 * Send events to the events stream.
 
 The new plugin API features are demonstrated in the
 link:https://gerrit-review.googlesource.com/#/admin/projects/plugins/cookbook-plugin[
-Cookbook Plugin].
+Cookbook Plugin] and core plugins.
+
+* The Cookbook Plugin replaces the "Hello World" plugin.
 
 == Important Bug Fixes
 * Don’t allow project owners to delete/create branches if force push
