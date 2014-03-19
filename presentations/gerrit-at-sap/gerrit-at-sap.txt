@@ -23,9 +23,95 @@
 
 == Gerrit at SAP
 
+Why is SAP using Gerrit?
+
+== Gerrit at SAP
+
+Why is SAP using Gerrit?
+
+* We like Git.
+
+== Gerrit at SAP
+
+Why is SAP using Gerrit?
+
+* We like Git.
+* We believe in Code Review.
+
+== Gerrit at SAP
+
+Why is SAP using Gerrit?
+
+* We like Git.
+* We believe in Code Review.
+* Fosters Collaboration between Teams.
+
+== Gerrit at SAP
+
+Why is SAP using Gerrit?
+
+* We like Git.
+* We believe in Code Review.
+* Fosters Collaboration between Teams.
+* Highly Customizable Workflows
+** Access Rights
+** Prolog Submit Rules
+
+== Gerrit at SAP
+
+Why is SAP using Gerrit?
+
+* We like Git.
+* We believe in Code Review.
+* Fosters Collaboration between Teams.
+* Highly Customizable Workflows
+* Automatic Verifications of Open Changes
+** Gerrit Trigger on Jenkins
+
+== Gerrit at SAP
+
+Why is SAP using Gerrit?
+
+* We like Git.
+* We believe in Code Review.
+* Fosters Collaboration between Teams.
+* Highly Customizable Workflows
+* Automatic Verifications of Open Changes
+* Easy Integration with other Tools
+** REST API
+** Stream Events
+** Plugins
+
+== Gerrit at SAP
+
+Why is SAP using Gerrit?
+
+* We like Git.
+* We believe in Code Review.
+* Fosters Collaboration between Teams.
+* Highly Customizable Workflows
+* Automatic Verifications of Open Changes
+* Easy Integration with other Tools
+* Runs very stable + Low Administration Effort
+
+== Gerrit at SAP
+
+Why is SAP using Gerrit?
+
+* We like Git.
+* We believe in Code Review.
+* Fosters Collaboration between Teams.
+* Highly Customizable Workflows
+* Automatic Verifications of Open Changes
+* Easy Integration with other Tools
+* Runs very stable + Low Administration Effort
+* Large Open Source Community, Friendly Licence, no Licence Fees
+
+== Gerrit at SAP
+
 * using Gerrit since 2010
 * 2 Gerrit maintainers
-* contributing to JGit and EGit
+* multiple committers in JGit and EGit
 
 == Gerrit at SAP
 
@@ -41,6 +127,7 @@
 
 * 1 huge project (~15GB)
 * number of users: > 2K
+* hardware cluster, 80 CPU, 1TB RAM
 
 === &nbsp;
 Further Gerrit instances in preparation.
