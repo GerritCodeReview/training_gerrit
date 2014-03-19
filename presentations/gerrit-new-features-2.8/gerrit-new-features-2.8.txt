@@ -45,8 +45,11 @@ deliver results much faster than the database.
 
 == New search operators
 
-* New link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.8/user-search.html#file[
-  file] operator to find changes on the specified file. Regular
+New search operators are available when the secondary index
+is enabled.
+
+* link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.8/user-search.html#file[
+  file] operator: find changes on the specified file. Regular
   expressions can be used to specify a file name pattern.
 +
 .Find all merged changes in the 'gerrit' project that touched 'ReceiveCommits.java'
@@ -55,9 +58,9 @@ deliver results much faster than the database.
   file:gerrit-server/src/main/java/com/google/gerrit/server/git/ReceiveCommits.java
 ----
 
-* New link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.8/user-search.html#comment[
-  comment] operator to find changes that match a string in any comment
-  left by a reviewer
+* link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.8/user-search.html#comment[
+  comment] operator: find changes that match a string in any comment
+  left by a reviewer.
 +
 .Find all merged changes in the 'gerrit' project where a reviewer wrote 'third-party libraries' in any comment
 ----
