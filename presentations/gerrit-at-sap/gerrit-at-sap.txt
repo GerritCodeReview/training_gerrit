@@ -64,10 +64,19 @@ image:../../img/project-portal-search-2.png[]
 
 == Project Info
 
-* Project Team
-* Links to Source Code, Build Server, Issue Tracker etc.
-+
 image:../../img/project-portal-project-info.png[]
+
+== Project Info
+
+image:../../img/project-portal-project-info-about.png[]
+
+== Project Info
+
+image:../../img/project-portal-project-info-project-team.png[]
+
+== Project Info
+
+image:../../img/project-portal-project-info-links.png[]
 
 == Contribute to a project
 
