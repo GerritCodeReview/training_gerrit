@@ -37,6 +37,8 @@ deliver results much faster than the database.
 
 * Lucene and Solr Cloud indexes are supported
 
+* Lucene is built-in; Solr Cloud requires external setup
+
 * In 2.8 the secondary index is optional
 
 * From 2.9 it will be mandatory; the default will be Lucene
