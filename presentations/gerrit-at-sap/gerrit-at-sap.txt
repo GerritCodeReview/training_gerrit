@@ -266,6 +266,22 @@ image:../../img/service-user-plugin.png[]
 
 image:../../img/service-user-plugin-administration.png[]
 
+== Configuration of serviceuser Plugin
+
+image:../../img/service-user-plugin-administration-help-messages.png[]
+
+== Configuration of serviceuser Plugin
+
+image:../../img/service-user-plugin-administration-email.png[]
+
+== Configuration of serviceuser Plugin
+
+image:../../img/service-user-plugin-administration-group.png[]
+
+== Configuration of serviceuser Plugin
+
+image:../../img/service-user-plugin-administration-git-notes.png[]
+
 == Observed misuses of Gerrit
 
 * storage of Linux ISO images
