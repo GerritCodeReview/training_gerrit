@@ -30,35 +30,6 @@
 +
 &#x278a; not including merge commits
 
-== Labels can be configured to copy scores forward to new patch sets
-
-* link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.8/config-labels.html#label_copyAllScoresOnTrivialRebase[
-  For trivial rebases]
-+
-----
-[label "Code-Review"]
-  function = MaxWithBlock
-  copyMinScore = true
-  copyAllScoresOnTrivialRebase = true
-  value = -2 Do not submit
-  value = -1 I would prefer that you didn't submit this
-  value =  0 No score
-  value = +1 Looks good to me, but someone else must approve
-  value = +2 Looks good to me, approved
-----
-
-* link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.8/config-labels.html#label_copyAllScoresIfNoCodeChange[
-  If there is no code change (e.g. only the commit message was edited)]
-+
-----
-[label "Verified"]
-  function = MaxWithBlock
-  copyAllScoresIfNoCodeChange = true
-  value = -1 Fails
-  value =  0 No score
-  value = +1 Verified
-----
-
 == Improved performance of change queries
 
 The change search in Gerrit is now backed by a secondary index which can
@@ -135,6 +106,35 @@ image:../../img/new-change-screen.png[]
 
 .Old Change Screen
 image:../../img/old-change-screen.png[]
+
+== Labels can be configured to copy scores forward to new patch sets
+
+* link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.8/config-labels.html#label_copyAllScoresOnTrivialRebase[
+  For trivial rebases]
++
+----
+[label "Code-Review"]
+  function = MaxWithBlock
+  copyMinScore = true
+  copyAllScoresOnTrivialRebase = true
+  value = -2 Do not submit
+  value = -1 I would prefer that you didn't submit this
+  value =  0 No score
+  value = +1 Looks good to me, but someone else must approve
+  value = +2 Looks good to me, approved
+----
+
+* link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.8/config-labels.html#label_copyAllScoresIfNoCodeChange[
+  If there is no code change (e.g. only the commit message was edited)]
++
+----
+[label "Verified"]
+  function = MaxWithBlock
+  copyAllScoresIfNoCodeChange = true
+  value = -1 Fails
+  value =  0 No score
+  value = +1 Verified
+----
 
 == REST API
 
