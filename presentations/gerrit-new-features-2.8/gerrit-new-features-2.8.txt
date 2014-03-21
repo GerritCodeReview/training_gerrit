@@ -12,6 +12,8 @@
 2.8.1 Release Notes]
 * link:https://gerrit-documentation.storage.googleapis.com/ReleaseNotes/ReleaseNotes-2.8.2.html[
 2.8.2 Release Notes]
+* link:https://gerrit-documentation.storage.googleapis.com/ReleaseNotes/ReleaseNotes-2.8.3.html[
+2.8.3 Release Notes]
 
 * Statistics
 +
