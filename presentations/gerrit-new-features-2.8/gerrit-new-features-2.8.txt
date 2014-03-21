@@ -204,6 +204,8 @@ to:
 
 ** Deploy the plugin API artifacts to the public repository
 
+== Questions?
+
 ++++
 <style type="text/css">
 #title-page {
