@@ -396,6 +396,8 @@ support to archive repositories is missing
 
 * project renaming
 
+* Project Owner confusion with Prolog
+
 * accidental removal of owner rights for project / group
 
 * configuration of periodical fetches for forked open source projects
