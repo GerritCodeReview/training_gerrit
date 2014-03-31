@@ -9,7 +9,7 @@ digraph {
 
   D -> C -> B -> A
   F -> E [label=" diff-2", fontcolor=red, fontname=arial, fontsize=16]
-  E -> B [weight=0, label=" diff-1", fontcolor=red, labelfloat]
+  E -> B [weight=0, label=" diff-1", fontcolor=red, labelfloat=true]
   { rank=same; C; E }
   { rank=same; D; F }
 
@@ -50,18 +50,18 @@ digraph {
 	edge [style=bold, color="#385d8a", arrowhead=none, fontname=arial, fontsize=16]
 
   D -> C -> B -> A
-  F -> E [label=" diff-2", fontcolor=red, labelfloat]
-  E -> B [weight=0, label=" diff-1", fontcolor=red, labelfloat]
+  F -> E [label=" diff-2", fontcolor=red, labelfloat=true]
+  E -> B [weight=0, label=" diff-1", fontcolor=red, labelfloat=true]
   { rank=same; C; E }
   { rank=same; D; F }
 
-  EP -> D [weight=0, color=red, label=" diff-1", fontcolor=red, labelfloat]
+  EP -> D [weight=0, color=red, label=" diff-1", fontcolor=red, labelfloat=true]
 
   D -> F [style=invis]
 
   FP [label="F'", style=filled, fillcolor=coral1, color=red]
   EP [label="E'", style=filled, fillcolor=coral1, color=red]
-  FP -> EP [color=red, label=" diff-2", fontcolor=red, labelfloat]
+  FP -> EP [color=red, label=" diff-2", fontcolor=red, labelfloat=true]
   EP -> F [style=invis]
 
 	edge [arrowhead=normal]
