@@ -8,10 +8,10 @@ digraph {
 	edge [style=bold, color="#385d8a", arrowhead=none, fontname=arial, fontsize=16]
   G [style=filled, fillcolor=coral1, color=red]
 
-  G -> D [color=red, label=" diff-2", fontcolor=red, labelfloat]
+  G -> D [color=red, label=" diff-2", fontcolor=red, labelfloat=true]
   D -> C -> B -> A
-  F -> E [label=" diff-2", fontcolor=red, labelfloat]
-  E -> B [weight=0, label=" diff-1", fontcolor=red, labelfloat]
+  F -> E [label=" diff-2", fontcolor=red, labelfloat=true]
+  E -> B [weight=0, label=" diff-1", fontcolor=red, labelfloat=true]
 
 	edge [arrowhead=normal]
 	node [shape=box, style=filled, fillcolor=lightgrey, color=black]

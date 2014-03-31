@@ -10,8 +10,8 @@ digraph {
 
   G -> D [style=invis]
   D -> C -> B -> A
-  F -> E [label=" diff-2", fontcolor=red, labelfloat]
-  E -> B [weight=0, label=" diff-1", fontcolor=red, labelfloat]
+  F -> E [label=" diff-2", fontcolor=red, labelfloat=true]
+  E -> B [weight=0, label=" diff-1", fontcolor=red, labelfloat=true]
 
 	edge [arrowhead=normal]
 	node [shape=box, style=filled, fillcolor=lightgrey, color=black]
