@@ -11,8 +11,8 @@
 +
 [width="50%",cols=">s,^m,^m,^m,^m,^m,^m",options="header"]
 |==========================
-|                 |Gerrit 2.9-RC1 |Gerrit 2.8 |Gerrit 2.7 |Gerrit 2.6 |Gerrit 2.5 |Gerrit 2.4
-|commits &#x278a; |988            |1373       |272        |1301       |508        |122
+|                 |Gerrit 2.9     |Gerrit 2.8 |Gerrit 2.7 |Gerrit 2.6 |Gerrit 2.5 |Gerrit 2.4
+|commits &#x278a; |1259           |1373       |272        |1301       |508        |122
 |resolved issues
 |link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.9[43]
 |link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.8[72]
@@ -20,7 +20,7 @@
 |link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.6[85]
 |link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.5[51]
 |link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.4[35]
-|contributors     |37             |54         |31         |56         |34         |22
+|contributors     |49             |54         |31         |56         |34         |22
 |==========================
 +
 &#x278a; not including merge commits
