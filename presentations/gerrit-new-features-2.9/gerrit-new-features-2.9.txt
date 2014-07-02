@@ -99,7 +99,7 @@ image:../../img/new-change-screen-change-info-block-cannot-merge.png[]
 
 == New Change Screen
 
-image:../../img/new-change-screen-merge-change.png[]
+image:../../img/new-change-screen-submit.png[]
 
 == New Change Screen
 
