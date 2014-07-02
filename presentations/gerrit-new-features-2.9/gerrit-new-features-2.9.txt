@@ -95,7 +95,7 @@ image:../../img/new-change-screen-change-info-block-labels.png[]
 
 == New Change Screen
 
-image:../../img/new-change-screen-merge-conflict.png[]
+image:../../img/new-change-screen-change-info-block-cannot-merge.png[]
 
 == New Change Screen
 
@@ -184,10 +184,6 @@ image:../../img/new-change-screen-history.png[]
 == New Change Screen
 
 image:../../img/new-change-screen-reply-to-summary-comment.png[]
-
-== New Change Screen
-
-image:../../img/new-change-screen-replied.png[]
 
 == New Change Screen
 
