@@ -385,6 +385,13 @@ image:../../img/documentation-search-result.png[]
 * link:https://gerrit-review.googlesource.com/Documentation/cmd-apropos.html[
   SSH command to search in Gerrit documentation]
 
+== Project Owner Guide
+
+link:https://gerrit-review.googlesource.com/Documentation/intro-project-owner.html[
+New documentation dedicated to project owners].
+
+image:../../img/project-owner-guide.png[]
+
 == Plugin Highlights
 
 * Plugin API to invoke the REST API
