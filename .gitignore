@@ -3,3 +3,4 @@ target/
 .pydevproject
 *.html
 *.pdf
+.DS_Store
