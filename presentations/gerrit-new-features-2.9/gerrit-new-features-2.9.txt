@@ -9,9 +9,10 @@
 
 * Statistics
 +
-[width="50%",cols=">s,^m,^m,^m,^m,^m,^m",options="header"]
+[width="80%",cols=">s,^m,^m,^m,^m,^m,^m",options="header"]
 |==========================
 |                 |Gerrit 2.9     |Gerrit 2.8 |Gerrit 2.7 |Gerrit 2.6 |Gerrit 2.5 |Gerrit 2.4
+|Date             |Jul 2014       |Dec 2013   |Sep 2013   |Jun 2013   |Oct 2012   |May 2012
 |commits &#x278a; |1259           |1373       |272        |1301       |508        |122
 |resolved issues
 |link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.9[43]
