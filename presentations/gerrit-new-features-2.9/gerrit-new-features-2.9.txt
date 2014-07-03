@@ -27,8 +27,9 @@
 
 == New Change Screen
 
+link:https://gerrit-review.googlesource.com/Documentation/user-review-ui.html[
 The Change Screen was completely redesigned and is now based on the
-Gerrit REST API.
+Gerrit REST API.]
 
 * By default users get the new change screen.
 +
