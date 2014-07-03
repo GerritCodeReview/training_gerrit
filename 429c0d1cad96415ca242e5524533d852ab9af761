@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "847b4d5f_623d36d7",
+        "filename": "presentations/gerrit-new-features-2.9/gerrit-new-features-2.9.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 391,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-07-03T08:05:14Z",
+      "side": 1,
+      "message": "nit: put the period outside of the hyperlink.",
+      "range": {
+        "startLine": 391,
+        "startChar": 45,
+        "endLine": 391,
+        "endChar": 46
+      },
+      "revId": "429c0d1cad96415ca242e5524533d852ab9af761",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
