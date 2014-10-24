@@ -1,0 +1,433 @@
+= Model Support in Gerrit
+:backend: slidy
+:max-width: 70em
+
+[[title-page]]
+== Model Support in Gerrit
+
+== Model Support in Gerrit
+
+* Gerrit Introduction
+* Challenges with Models
+* Model Support in Gerrit?
+
+== About Me
+
+image:../../img/edwin.png[height=600]
+
+[[title-page]]
+== Gerrit Introduction
+
+== Gerrit Introduction
+
+* What is Gerrit?
+* Gerrit Workflow
+* Benefits
+
+== Gerrit
+
+https://code.google.com/p/gerrit/
+ 
+* Open Source
+** Large Community
+** Apache License, Version 2.0
+
+* Used by
++
+image:../../img/logos.png[height=400]
+
+== Gerrit
+
+*What is Gerrit?*
+
+[role="incremental"]
+* Git Server
++
+image:../../img/gerrit-server.png[height=400]
+
+[[review-site]]
+[role="incremental"]
+--
+Review Site:
+
+image:../../img/review-site.png[height=400]
+--
+
+== Gerrit
+
+*Gerrit Features*
+
+[role="incremental"]
+* Code Review
++
+image:../../img/code-review.png[height=400]
+
+[role="incremental"]
+[[acl]]
+--
+* Access Control
++
+image:../../img/default-access-rights.png[height=400]
+--
+
+== Gerrit Workflow
+
+== Gerrit Workflow
+
+image:../../img/workflow-1.png[height=600]
+
+== Gerrit Workflow
+
+image:../../img/workflow-2.png[height=600]
+
+== Gerrit Workflow
+
+image:../../img/workflow-3.png[height=600]
+
+== Gerrit Workflow
+
+image:../../img/workflow-4.png[height=600]
+
+== Gerrit Workflow
+
+image:../../img/workflow-5.png[height=600]
+
+== Gerrit Workflow
+
+image:../../img/workflow-6.png[height=600]
+
+== Benefits of Code Review with Gerrit (1)
+
+[role="incremental"]
+* Collaboration to find Best Solution
++
+[small]#-> eliminate bugs early#
+
+* Discussions on Code Level
++
+[small]#-> very efficient#
+
+* Transparent and Open Development Process
++
+[small]#-> everyone can take part and comment/vote#
++
+[small]#-> discussions are preserved#
+
+* Learn by Reading Code
++
+[small]#-> become a better developer#
+
+== Benefits of Code Review with Gerrit (2)
+
+[role="incremental"]
+* Code Review is integrated into the Development Process
+
+* Works well across Locations and Time Zones
+
+* Easy Integration with Jenkins
++
+[small]#-> automatic verification#
+
+* Results in
+** Clean Commits
+** Good Commit Messages
+** Clean History
+
+[[title-page]]
+== Challenges with Models
+
+== Challenges with Models
+
+* The Entity Challenge
+* The Review Challenge
+* The Comment Challenge
+* The Merge Challenge
+
+== The Entity Challenge
+
+[frame="none",grid="none",halign="center",valign="center",width="65%"]
+|=====
+|image:../../img/diffy.png[height=150]||image:../../img/papyrus.png[height=150]
+|=====
+
+== The Entity Challenge
+
+[frame="none",grid="none",halign="center",valign="center",width="65%"]
+|=====
+|image:../../img/diffy.png[height=150]||image:../../img/papyrus.png[height=150]
+|Gerrit operates on Files|image:../../img/conflict.png[height=80]|Mapping of Model Entities to Files may not be 1:1
+|=====
+
+[role="incremental"]
+* File List on Change Screen
++
+[small]#-> unchanged files are not shown, model entities which are
+mapped to n files may be shown incompletely#
++
+image:../../img/file-list.png[height=200]
+
+== The Entity Challenge
+
+[frame="none",grid="none",halign="center",valign="center",width="65%"]
+|=====
+|image:../../img/diffy.png[height=150]||image:../../img/papyrus.png[height=150]
+|Gerrit operates on Files|image:../../img/conflict.png[height=80]|Mapping of Model Entities to Files may not be 1:1
+|=====
+
+* Review Navigates from File to File
++
+image:../../img/side-by-side-diff-view.png[height=200]
+
+== The Review Challenge
+
+[frame="none",grid="none",halign="center",valign="center",width="65%"]
+|=====
+|image:../../img/diffy.png[height=150]||image:../../img/papyrus.png[height=150]
+|Review on File Content|image:../../img/conflict.png[height=80]|Review
+Visual Model Representation, is File Representation readable?
+|=====
+
+== The Review Challenge
+
+[frame="none",grid="none",halign="center",valign="center",width="65%"]
+|=====
+|image:../../img/diffy.png[height=150]||image:../../img/papyrus.png[height=150]
+|Review on File Content|image:../../img/conflict.png[height=80]|Review
+Visual Model Representation, is File Representation readable?
+|Diff-Highlighting is Text-Based|image:../../img/conflict.png[height=80]|
+Specialized Model-Diff
+|=====
+
+== The Review Challenge
+
+[frame="none",grid="none",halign="center",valign="center",width="65%"]
+|=====
+|image:../../img/diffy.png[height=150]||image:../../img/papyrus.png[height=150]
+|Review on File Content|image:../../img/conflict.png[height=80]|Review
+Visual Model Representation, is File Representation readable?
+|Diff-Highlighting is Text-Based|image:../../img/conflict.png[height=80]|
+Specialized Model-Diff
+|Minimal Diff|image:../../img/conflict.png[height=80]|Large File-Based
+Diff due to Reformatting/Resturcturing done by the Model Tool
+|=====
+
+== The Review Challenge
+
+* Side-By-Side Diff
++
+image:../../img/side-by-side-diff.png[height=250]
+
+== The Review Challenge
+
+* Unified Diff
++
+image:../../img/unified-diff.png[height=500]
+
+== The Comment Challenge
+
+[frame="none",grid="none",halign="center",valign="center",width="65%"]
+|=====
+|image:../../img/diffy.png[height=150]||image:../../img/papyrus.png[height=150]
+|Comments on File Content|image:../../img/conflict.png[height=80]|Comments on Model Entities,
+can they be mapped to inline comments back and forth?
+|=====
+
+[role="incremental"]
+* Inline comments
++
+image:../../img/inline-comment.png[height=200]
+
+== The Merge Challenge
+
+[frame="none",grid="none",halign="center",valign="center",width="65%"]
+|=====
+|image:../../img/diffy.png[height=150]||image:../../img/papyrus.png[height=150]
+|Conflict Detection on File Level|image:../../img/conflict.png[height=80]|
+Conflicts on Model Entities, Model may be broken after clean merge.
+|=====
+
+[role="incremental"]
+* Pessimistic Locking is *NOT* possible.
+
+* Submit/Merge Strategy
++
+[small]#-> can be controlled per change from Prolog#
++
+image:../../img/submit-type.png[height=200]
+
+[[title-page]]
+== Model Support in Gerrit?
+
+== Model Support in Gerrit?
+
+* Reviewable Models
+* A Simple Example
+* Can we do better?
+
+== Model Support in Gerrit?
+
+image:../../img/gerrit-model-question-1.png[height=200]
+
+[[question-2]]
+[role="incremental"]
+image:../../img/gerrit-model-question-2.png[height=200]
+
+[[answer]]
+[role="incremental"]
+* Make the source human readable.
+* Map 1 model entity to 1 file (unit of conflicts)
+
+== A Simple Example
+
+Project Documentation in Gerrit
+(link:https://gerrit-review.googlesource.com/#/admin/projects/plugins/x-docs[xdocs plugin])
+
+image:../../img/project-documentation.png[height=600]
+
+== A Simple Example
+
+image:../../img/project-documentation-preview-link.png[height=600]
+
+== A Simple Example
+
+image:../../img/project-documentation-preview.png[height=600]
+
+== A Simple Example
+
+Possible *Future* Extension:
+
+* Render Side-By-Side Diff / Unified Diff based on HTML comparison
++
+image:../../img/html-diff.png[height=400]
+
+[[title-page]]
+== Better Model Support in Gerrit?
+
+== Better Model Support in Gerrit?
+
+1. Extend Gerrit
+2. Model Support as Gerrit Plugin
+
+== Better Model Support - Extend Gerrit
+
+[role="incremental"]
+* Open Source Project
+
+* currently not a focus topic for Gerrit Community,
++
+no plans to pro-actively support models
+
+* Issues of Diffing and Merging must be solved
++
+beforehand by the Modelling Technology
+
+* Major Refactorings in Gerrit are difficult to get in
+
+== Better Model Support - Gerrit Plugin
+
+What is possible *today*?
+
+[role="incremental"]
+* Show a Model Preview
++
+[small]#-> as done by xdocs plugin#
+
+* Add Custom Screens
+
+* Add Menu Entries
+
+* Add Button to Change Screen
++
+[small]#-> e.g. "Model View" to switch to a Model-Aware Change Screen#
+
+* Model Validation on Push
++
+[small]#-> better to be done in Jenkins#
+
+* Access to Git Repositories
++
+[small]#-> change Git configuration#
+
+[role="incremental"]
+Possible *Future* Extensions:
+
+[role="incremental"]
+* Custom Rendering of Diff
+* Custom Submit/Merge Strategies
+
+== Better Model Support - Gerrit Plugin
+
+What is possible today?
+
+* Show a *Model Preview*
++
+[small]#-> as done by xdocs plugin#
+
+* Add Custom Screens
+
+* Add Menu Entries
+
+* Add Button to Change Screen
++
+[small]#-> e.g. "Model View" to switch to a Model-Aware Change Screen#
+
+* Model Validation on Push
++
+[small]#-> better to be done in Jenkins#
+
+* Access to Git Repositories
++
+[small]#-> change Git configuration#
+
+Possible Future Extensions:
+
+* Custom *Rendering of Diff*
+* Custom *Submit/Merge Strategies*
+
+[[title-page]]
+== Questions?
+
+++++
+<style type="text/css">
+#title-page {
+  border-bottom: 0;
+  text-align: center;
+  position: relative;
+  top: 30%;
+  font-size: 60px;
+}
+
+#acl {
+  position: absolute;
+  left: 500px;
+  top: 115px;
+}
+
+#review-site {
+  position: absolute;
+  left: 450px;
+  top: 125px;
+}
+
+#question-2 {
+  position: absolute;
+  left: 550px;
+  top: 175px;
+}
+
+#answer {
+  position: absolute;
+  left: 250px;
+  top: 425px;
+}
+
+li span {
+  margin-top: 15px;
+}
+
+.small {
+  position: relative;
+  top: -15px;
+}
+</style>
+++++
