@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "b566c610_786f61ee",
+        "filename": "presentations/model-support-in-gerrit/model-support-in-gerrit.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2014-10-28T15:11:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f5bafe9a_6aa6b7cc",
+      "range": {
+        "startLine": 30,
+        "startChar": 0,
+        "endLine": 30,
+        "endChar": 1
+      },
+      "revId": "17f2b9489e19c31cbc446567a486f5f2fb45c807",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "55c2ea1e_cd94a94f",
         "filename": "presentations/model-support-in-gerrit/model-support-in-gerrit.txt",
         "patchSetId": 2
@@ -36,6 +60,30 @@
       "writtenOn": "2014-10-28T10:46:04Z",
       "side": 1,
       "message": "The quintessence of this presentation: \"Model support in Gerrit: it sucks\"?",
+      "range": {
+        "startLine": 316,
+        "startChar": 0,
+        "endLine": 324,
+        "endChar": 54
+      },
+      "revId": "17f2b9489e19c31cbc446567a486f5f2fb45c807",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b566c610_187425c2",
+        "filename": "presentations/model-support-in-gerrit/model-support-in-gerrit.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 324,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2014-10-28T15:11:23Z",
+      "side": 1,
+      "message": "Ah, you got me!\n\nI would have just said that we don\u0027t have model support in Gerrit yet, but then my talk wouldn\u0027t fill 20 minutes...\n\nBut the idea of this workshop here is to make a start in making it better :)",
+      "parentUuid": "55c2ea1e_cd94a94f",
       "range": {
         "startLine": 316,
         "startChar": 0,
