@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "4bffafb8_450b4a48",
+        "filename": "presentations/gerrit-new-features-2.10/gerrit-new-features-2.10.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2015-01-23T09:21:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6b02b38e_26185697",
+      "range": {
+        "startLine": 33,
+        "startChar": 3,
+        "endLine": 33,
+        "endChar": 14
+      },
+      "revId": "5558f90fab0f7666fa100de1a6cfd28144237f57",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4bffafb8_650e465a",
         "filename": "presentations/gerrit-new-features-2.10/gerrit-new-features-2.10.txt",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2015-01-23T09:17:58Z",
       "side": 1,
       "message": "Make this the very first slide. This is very important info for our users.",
+      "range": {
+        "startLine": 130,
+        "startChar": 0,
+        "endLine": 137,
+        "endChar": 49
+      },
+      "revId": "5558f90fab0f7666fa100de1a6cfd28144237f57",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6b02b38e_c647427f",
+        "filename": "presentations/gerrit-new-features-2.10/gerrit-new-features-2.10.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2015-01-23T09:21:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4bffafb8_650e465a",
       "range": {
         "startLine": 130,
         "startChar": 0,
