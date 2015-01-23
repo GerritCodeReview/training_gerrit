@@ -1,0 +1,181 @@
+= What's new in Gerrit 2.10
+:backend: slidy
+:max-width: 70em
+
+[[title-page]]
+== What's new in Gerrit 2.10
+
+== What's new in Gerrit 2.10
+
+* link:https://gerrit-documentation.storage.googleapis.com/ReleaseNotes/ReleaseNotes-2.10.html[
+2.10 Release Notes]
+
+* Statistics
++
+[width="100%",cols=">s,^m,^m,^m,^m,^m,^m,^m",options="header"]
+|==========================
+|                 |Gerrit 2.10    |Gerrit 2.9     |Gerrit 2.8 |Gerrit 2.7 |Gerrit 2.6 |Gerrit 2.5 |Gerrit 2.4
+|Date             |Jan 2015       |Jul 2014       |Dec 2013   |Sep 2013   |Jun 2013   |Oct 2012   |May 2012
+|commits &#x278a; |627            |1259           |1373       |272        |1301       |508        |122
+|resolved issues
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.10[30]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.9[43]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.8[72]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.7[9]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.6[85]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.5[51]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.4[35]
+|contributors     |49             |49             |54         |31         |56         |34         |22
+|==========================
++
+&#x278a; not including merge commits
+
+== Old Change Screen
+
+*WARNING:* This is the last Gerrit release that contains the old
+change screen.
+
+Configure new Change Screen:
++
+image:../../img/configure-new-change-screen.png[]
+
+== Customizable 'My' menu
+
+Users can customize the contents of the 'My' menu.
+
+image:../../img/my-menu.png[]
+
+image:../../img/my-menu-configuration.png[]
+
+== New Change Screen
+
+* Avatar for author, committer and change owner
++
+image:../../img/avatar-for-author-and-committer.png[]
++
+image:../../img/avatar-for-change-owner.png[]
+
+* Quick button to add yourself as reviewer
++
+image:../../img/add-me.png[]
+
+* Link project name to dashboard
+
+== New Side-by-Side Diff Screen (1)
+
+* Users can select the syntax highlighter
++
+image:../../img/select-syntax-highlighter.png[]
+
+* Syntax highlighting of the commit message
++
+image:../../img/syntax-highlighting-for-commit-message.png[]
+
+== New Side-by-Side Diff Screen (2)
+
+* Allow to toggle empty pane for added and deleted files
++
+image:../../img/hide-empty-pane.png[]
+
+* `Shift-a` keybinding to show/hide left side
+
+== Change List / Dashboards (1)
+
+* Option to show Change-ID in the change table
++
+image:../../img/change-numbers-in-change-list.png[]
++
+image:../../img/show-change-number-option.png[]
+
+== Change List / Dashboards (2)
+
+* More formatting options for labels
++
+image:../../img/label-formatting-in-change-list.png[]
++
+image:../../img/label-formatting-options.png[]
+
+* 'age' operator is removed when drilling down from a dashboard to a query
++
+image:../../img/dashboard-drilldown-removes-age-operator.png[]
+
+== Project List Screen
+
+* Support filtering by regular expression
++
+image:../../img/project-search-with-regex.png[]
+
+== Search
+
+* Allow to search projects by prefix
+
+* link:https://gerrit-review.googlesource.com/Documentation/user-search.html#size[
+New search operators for number of changed lines]
++
+image:../../img/size-search-operators.png[]
+
+* Search more fields in the default search query
++
+If a search is given with only a text, search over a variety of fields
+rather than just the project name.
+
+== Misc
+
+* new REST endpoints (see
+link:https://gerrit-documentation.storage.googleapis.com/ReleaseNotes/ReleaseNotes-2.10.html#_rest_api[
+Release Notes] for details)
+
+* Configuration
+
+** Projects can
+link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.10/config-project-config.html#mimetype-section[
+configure MIME types for files].
++
+image:../../img/mime-type-selection.png[]
+
+** link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.10/config-labels.html#label_defaultValue[
+A default value for a label can be configured]
+
+== Plugin Highlights
+
+* Support for externally loaded plugins.
++
+Plugins can be implemented in Scala or Groovy using the
+link:https://gerrit-review.googlesource.com/\#/admin/projects/plugins/scripting/groovy-provider[
+Groovy provider] and
+link:https://gerrit-review.googlesource.com/#/admin/projects/plugins/scripting/scala-provider[
+Scala provider] plugins.
+
+* New extension points:
+
+** link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.10/dev-plugins.html#links-to-external-tools[
+Project and Patch Set Web Links]
+** link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.10/config-validation.html#pre-upload-validation[
+pre-upload validation]
+** link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.10/dev-plugins.html#pre-upload-hook[
+JGit PreUploadHook]
+** Events with usage data
+
+* Support for persistent caches
+
+* New extensions in the Java Plugin API:
+
+** Query changes
+** Create/get/list projects
+** Get/set review status
+** Create change
+** Get account
+** Star/unstar changes
+** Check if revision needs rebase
+
+++++
+<style type="text/css">
+#title-page {
+  border-bottom: 0;
+  text-align: center;
+  position: relative;
+  top: 30%;
+  font-size: 60px;
+}
+</style>
+++++
