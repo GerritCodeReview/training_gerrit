@@ -101,6 +101,24 @@
     },
     {
       "key": {
+        "uuid": "0bc137c3_23808a24",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2015-01-26T13:18:42Z",
+      "side": 1,
+      "message": "Cool :)",
+      "parentUuid": "eb7b035e_c259a252",
+      "revId": "cbb78ae7bbe3fb9c20d8297a58ffa60a2717b3e4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0bc137c3_e32312ce",
         "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
         "patchSetId": 3
