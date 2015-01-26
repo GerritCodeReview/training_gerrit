@@ -1,0 +1,84 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0bc137c3_230eca58",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2015-01-26T11:41:20Z",
+      "side": 1,
+      "message": "Instead of repeating the same content on several slide, just have one list with role \u0027incremental\u0027:\n\n  [role\u003d\"incremental\"]\n  * Allow to modify repository content directly in browser\n  * Address reviewer comments\n  * Low barrier to contribute to a project\n  * Other collaboration platforms have this feature",
+      "range": {
+        "startLine": 8,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 49
+      },
+      "revId": "cbb78ae7bbe3fb9c20d8297a58ffa60a2717b3e4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0bc137c3_831e9e87",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 178,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2015-01-26T11:41:20Z",
+      "side": 1,
+      "message": "Should we mention that new empty changes are created as draft?",
+      "revId": "cbb78ae7bbe3fb9c20d8297a58ffa60a2717b3e4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "eb7b035e_027b8aac",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2015-01-26T11:41:20Z",
+      "side": 1,
+      "message": "This and all images which are referenced below are missing in the change.",
+      "revId": "cbb78ae7bbe3fb9c20d8297a58ffa60a2717b3e4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0bc137c3_e32312ce",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 272,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2015-01-26T11:41:20Z",
+      "side": 1,
+      "message": "Maybe this should be added in a follow-up change so that it doesn\u0027t block the submit of this change?",
+      "range": {
+        "startLine": 270,
+        "startChar": 0,
+        "endLine": 272,
+        "endChar": 6
+      },
+      "revId": "cbb78ae7bbe3fb9c20d8297a58ffa60a2717b3e4",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
