@@ -1,0 +1,284 @@
+= Inline Edit in Gerrit
+:backend: slidy
+:max-width: 70em
+
+[[title-page]]
+== Inline Edit in Gerrit
+
+== Motivation
+
+* Allow to modify repository content directly in browser
+
+== Motivation
+
+* Allow to modify repository content directly in browser
+* Address reviewer comments
+
+== Motivation
+
+* Allow to modify repository content directly in browser
+* Address reviewer comments
+* Low barrier to contribute to a project
+
+== Motivation
+
+* Allow to modify repository content directly in browser
+* Address reviewer comments
+* Low barrier to contribute to a project
+* Other collaboration platforms have this feature
+
+== Design
+
+* Inline changes are done in context of a change
+
+== Design
+
+* Inline changes are done in context of a change
+* Multiple file can be modified in context of change edit:
++
+no "one modification -- one commit" limitation
+
+== Design
+
+* Inline changes are done in context of a change
+* Multiple file can be modified in context of change edit:
++
+no "one modification -- one commit" limitation
++
+* Change edits are stored in special ref:
++
+`refs/users/UU/UUUU/edit-CCCC/P` where
++
+`UU/UUUU` is sharded representation of user account,
++
+`CCCC` is change number and
++
+`P` is the patch set number it is based on
+
+== Design
+
+* Inline changes are done in context of a change
+* Multiple file can be modified in context of change edit:
++
+no "one modification -- one commit" limitation
++
+* Change edits are stored in special ref:
++
+`refs/users/UU/UUUU/edit-CCCC/P` where
++
+`UU/UUUU` is sharded representation of user account,
++
+`CCCC` is change number and
++
+`P` is the patch set number it is based on
++
+* There is max. one edit per user per change
+
+== Design
+
+* Inline changes are done in context of a change
+* Multiple file can be modified in context of change edit:
++
+no "one modification -- one commit" limitation
++
+* Change edits are stored in special ref:
++
+`refs/users/UU/UUUU/edit-CCCC/P` where
++
+`UU/UUUU` is sharded representation of user account,
++
+`CCCC` is change number and
++
+`P` is the patch set number it is based on
++
+* There is max. one edit per user per change
+* Change edit isn't stored in the database
+
+== Design
+
+* Inline changes are done in context of a change
+* Multiple file can be modified in context of change edit:
++
+no "one modification -- one commit" limitation
++
+* Change edits are stored in special ref:
++
+`refs/users/UU/UUUU/edit-CCCC/P` where
++
+`UU/UUUU` is sharded representation of user account,
++
+`CCCC` is change number and
++
+`P` is the patch set number it is based on
++
+* There is max. one edit per user per change
+* Change edit isn't stored in the database
+* Change edit can be deleted or published and promoted to regular patch set
+
+== Design
+
+* Inline changes are done in context of a change
+* Multiple file can be modified in context of change edit:
++
+no "one modification -- one commit" limitation
++
+* Change edits are stored in special ref:
++
+`refs/users/UU/UUUU/edit-CCCC/P` where
++
+`UU/UUUU` is sharded representation of user account,
++
+`CCCC` is change number and
++
+`P` is the patch set number it is based on
++
+* There is max. one edit per user per change
+* Change edit isn't stored in the database
+* Change edit can be deleted or published and promoted to regular patch set
+* When change edit is based on non-current patch set, it must be rebased
+
+== Design
+
+* Inline changes are done in context of a change
+* Multiple file can be modified in context of change edit:
++
+no "one modification -- one commit" limitation
++
+* Change edits are stored in special ref:
++
+`refs/users/UU/UUUU/edit-CCCC/P` where
++
+`UU/UUUU` is sharded representation of user account,
++
+`CCCC` is change number and
++
+`P` is the patch set number it is based on
++
+* There is max. one edit per user per change
+* Change edit isn't stored in the database
+* Change edit can be deleted or published and promoted to regular patch set
+* When change edit is based on non-current patch set, it must be rebased
+* Only change edit owner and users that were granted `accessDatabase`
++
+global capability can access change edit refs
+
+== Creating a New Empty Change
+
+* A new change can be created directly in the browser
+
+== Creating a New Empty Change
+
+* A new change can be created directly in the browser
+* It is not necessary to clone the whole repository to make trivial changes
+
+== Creating a New Empty Change
+
+* A new change can be created directly in the browser
+* It is not necessary to clone the whole repository to make trivial changes
+* There are two different ways to create an empty change:
+
+== Creating a New Empty Change
+
+* By clicking on the 'Create Change' button in the project screen:
++
+image:img/inline-edit-create-change-project-screen.png[]
+
+== Creating a New Empty Change
+
+* The user can select the branch on which the new change should be created:
++
+image:img/inline-edit-create-change-project-screen-dialog.png[]
+
+== Creating a New Empty Change
+
+* By clicking the 'Follow-Up' button on the change screen
++
+to create an empty change based on the selected change:
++
+image:img/inline-edit-create-follow-up-change.png[]
+
+[[create-change-from-project-info-screen]]
+
+== Editing Changes
+
+* To switch to edit mode, press the 'Edit' button at the top of the file list:
++
+image:img/inline-edit-enter-edit-mode-from-file-list.png[]
+
+== Editing Changes
+
+* In edit mode, files can be added, deleted and renamed
+* To switch from edit mode back to review mode, click the 'Done Editing' button
++
+image:img/inline-edit-file-list-in-edit-mode.png[]
+
+== Editing Changes
+
+* While in edit mode, clicking on a file name in the file list opens a screen editor
+* To save edits, click the 'Save' button or press `Ctrl-S/Cmd-S`
+* To return to the change screen, click the 'Close' button
+
+image:img/inline-edit-full-screen-editor.png[]
+
+== Editing Changes
+
+* It is possible to switch directly to edit mode from side by side screen
+* By clicking on the edit icon in the patch set list
+
+image:img/inline-edit-enter-edit-mode-from-diff.png[]
+
+== Editing Changes
+
+* It is possible to switch directly to edit mode from side by side screen
+* By clicking on the 'Fix' button in the comment box (the line is preserved)
+
+image:img/inline-edit-enter-edit-mode-from-comment-box.png[]
+
+== Reviewing Change Edits
+
+* Change edits are reviewed in the same way as regular patch sets
+* Change edits are shown as 'edit' in the patch list
+on the diff screen:
+
+image:img/inline-edit-edit-in-diff-screen-patch-list.png[]
+
+== Reviewing Change Edits
+
+Change edits are shown as 'edit' and on the change screen:
+
+image:img/inline-edit-edit-in-patch-list.png[]
+
+== Change Edit actions
+
+* To publish change edit click on 'Publish Edit' button
+* To delete change edit click on 'Delete Edit' button
+
+image:img/inline-edit-publish-or-delete.png[]
+
+== Change Edit actions
+
+* To rebase change edit click on 'Rebase Edit' button:
+
+image:img/inline-edit-rebase-or-delete.png[]
+
+== Change Edit actions
+
+* Select the desired scheme to download change edit:
+
+image:img/inline-edit-download-change-edit.png[]
+
+== x-docs plugin: Gerrit as WIKI system
+
+* TODO
+
+++++
+<style type="text/css">
+#title-page {
+  border-bottom: 0;
+  text-align: center;
+  position: relative;
+  top: 30%;
+  font-size: 60px;
+}
+</style>
+++++
