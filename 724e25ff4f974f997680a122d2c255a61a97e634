@@ -118,6 +118,30 @@
     },
     {
       "key": {
+        "uuid": "b7b973da_995ddb33",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1003935
+      },
+      "writtenOn": "2015-01-30T13:51:52Z",
+      "side": 1,
+      "message": "Yes, this is rather a limitation with the Github workflow that doesn\u0027t apply to Gerrit :)",
+      "parentUuid": "b7b973da_d912f37d",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 46
+      },
+      "revId": "724e25ff4f974f997680a122d2c255a61a97e634",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "17707f17_c4291eae",
         "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
         "patchSetId": 5
