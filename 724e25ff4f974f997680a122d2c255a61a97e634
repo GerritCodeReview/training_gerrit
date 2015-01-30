@@ -45,6 +45,230 @@
       "revId": "724e25ff4f974f997680a122d2c255a61a97e634",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "17707f17_a42c22bf",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2015-01-30T07:38:38Z",
+      "side": 1,
+      "message": "files",
+      "range": {
+        "startLine": 20,
+        "startChar": 11,
+        "endLine": 20,
+        "endChar": 15
+      },
+      "revId": "724e25ff4f974f997680a122d2c255a61a97e634",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f76ccb49_83763ebf",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2015-01-30T07:38:38Z",
+      "side": 1,
+      "message": "I think it should be made clearer that this was a limitation in the previous iteration of the inline edit feature.",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 22,
+        "endChar": 46
+      },
+      "revId": "724e25ff4f974f997680a122d2c255a61a97e634",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "17707f17_c4291eae",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2015-01-30T07:38:38Z",
+      "side": 1,
+      "message": "a new draft change",
+      "range": {
+        "startLine": 65,
+        "startChar": 10,
+        "endLine": 65,
+        "endChar": 18
+      },
+      "revId": "724e25ff4f974f997680a122d2c255a61a97e634",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f76ccb49_a3733ace",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2015-01-30T07:38:38Z",
+      "side": 1,
+      "message": "This is not merged yet :)",
+      "range": {
+        "startLine": 79,
+        "startChar": 48,
+        "endLine": 79,
+        "endChar": 55
+      },
+      "revId": "724e25ff4f974f997680a122d2c255a61a97e634",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f76ccb49_c3803626",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2015-01-30T07:38:38Z",
+      "side": 1,
+      "message": "\"Autocompletion\"?",
+      "range": {
+        "startLine": 86,
+        "startChar": 2,
+        "endLine": 86,
+        "endChar": 23
+      },
+      "revId": "724e25ff4f974f997680a122d2c255a61a97e634",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f76ccb49_e37d329b",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2015-01-30T07:38:38Z",
+      "side": 1,
+      "message": "full-screen",
+      "range": {
+        "startLine": 92,
+        "startChar": 71,
+        "endLine": 92,
+        "endChar": 77
+      },
+      "revId": "724e25ff4f974f997680a122d2c255a61a97e634",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f76ccb49_034a4e6b",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2015-01-30T07:38:38Z",
+      "side": 1,
+      "message": "from the",
+      "range": {
+        "startLine": 100,
+        "startChar": 49,
+        "endLine": 100,
+        "endChar": 53
+      },
+      "revId": "724e25ff4f974f997680a122d2c255a61a97e634",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "17707f17_e4261adb",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2015-01-30T07:38:38Z",
+      "side": 1,
+      "message": "from the",
+      "range": {
+        "startLine": 107,
+        "startChar": 49,
+        "endLine": 107,
+        "endChar": 53
+      },
+      "revId": "724e25ff4f974f997680a122d2c255a61a97e634",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f76ccb49_234f4a7c",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2015-01-30T07:38:38Z",
+      "side": 1,
+      "message": "Nice screen shot :)",
+      "revId": "724e25ff4f974f997680a122d2c255a61a97e634",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "17707f17_04633603",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2015-01-30T07:38:38Z",
+      "side": 1,
+      "message": "remove this word",
+      "range": {
+        "startLine": 122,
+        "startChar": 33,
+        "endLine": 122,
+        "endChar": 36
+      },
+      "revId": "724e25ff4f974f997680a122d2c255a61a97e634",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
     }
   ]
 }
