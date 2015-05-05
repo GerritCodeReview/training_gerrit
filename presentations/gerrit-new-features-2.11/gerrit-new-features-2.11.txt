@@ -1,0 +1,166 @@
+= What's new in Gerrit 2.11
+:backend: slidy
+:max-width: 70em
+
+[[title-page]]
+== What's new in Gerrit 2.11
+
+== What's new in Gerrit 2.11
+
+* link:https://gerrit-documentation.storage.googleapis.com/ReleaseNotes/ReleaseNotes-2.11.html[
+2.11 Release Notes]
+
+* Statistics
++
+[width="100%",cols=">s,^m,^m,^m,^m,^m,^m,^m,^m",options="header"]
+|==========================
+|                 |Gerrit 2.11    |Gerrit 2.10    |Gerrit 2.9     |Gerrit 2.8 |Gerrit 2.7 |Gerrit 2.6 |Gerrit 2.5 |Gerrit 2.4
+|Date             |April 2015     |Jan 2015       |Jul 2014       |Dec 2013   |Sep 2013   |Jun 2013   |Oct 2012   |May 2012
+|commits &#x278a; |1330           |627            |1259           |1373       |272        |1301       |508        |122
+|resolved issues
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.11[69]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.10[30]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.9[43]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.8[72]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.7[9]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.6[85]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.5[51]
+|link:http://code.google.com/p/gerrit/issues/list?can=1&q=FixedIn=2.4[35]
+|contributors     |51             |49             |49             |54         |31         |56         |34         |22
+|==========================
++
+&#x278a; not including merge commits
+
+== Old Change Screen
+
+*WARNING:* The old change screen has been removed.
+
+The new change screen is described in the
+link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.11/user-review-ui.html[
+Gerrit documentation].
+
+== Inline Edit
+
+link:https://gerrit-documentation.storage.googleapis.com/Documentation/2.11/user-inline-edit.html[Edit
+in WebUI]:
+
+* Create new Patch Sets
+* Create new Changes
+
+== Inline Edit - Create New Patch Set (1)
+
+image:../../img/edit-change-1.png[]
+
+== Inline Edit - Create New Patch Set (2)
+
+image:../../img/edit-change-2.png[]
+
+== Inline Edit - Create New Patch Set (3)
+
+image:../../img/edit-change-3.png[]
+
+== Inline Edit - Create New Patch Set (4)
+
+image:../../img/edit-change-4.png[]
+
+== Inline Edit - Create New Patch Set (5)
+
+image:../../img/edit-change-5.png[]
+
+== Inline Edit - Edit Commit Message
+
+* The commit message is now edited using the inline edit feature.
+* The `Edit Message` button is removed from change screen.
+
+== Inline Edit - Edit from Diff Screen
+
+image:../../img/edit-from-diff-screen.png[]
+
+== Inline Edit - Compare with Edit
+
+image:../../img/compare-with-edit.png[]
+
+== Inline Edit - Create Change
+
+image:../../img/create-change.png[]
+
+== Inline Edit - Create Follow-Up Change
+
+image:../../img/create-followup-change.png[]
+
+== Inline Edit - Edit Project Config
+
+image:../../img/edit-project-config.png[]
+
+== Improved Reviewer Suggestion (2.11.1)
+
+* faster
+
+* order or first/last name is not important:
++
+i.e. searching for "jo d" will find both "John Doe" and "Doe John"
+
+* ranking of the hits done by the Lucene
+
+image:../../img/reviewer-suggestion.png[]
+
+== Change Parent Revision
+
+Using the Rebase button it is now possible to rebase a change onto a
+different change (on the same destination branch), rather than only
+onto the head of the destination branch or the latest patch set of the
+predecessor change.
+
+image:../../img/change-parent-revision.png[]
+
+== Improved file sorting for C and C++ files
+
+Header files are now listed before implementation files.
+
+image:../../img/c-file-sorting.png[]
+
+== Switch between Side-by-Side and Unified Diff
+
+.To Unified Diff:
+image:../../img/switch-to-unified-diff.png[]
+
+.To Side-by-Side Diff:
+image:../../img/switch-to-side-by-side-diff.png[]
+
+== Highlight Search Results on Scrollbar
+
+image:../../img/highlight-search-results-on-scrollbar.png[]
+
+== Syntax Highlighting
+
+Newly supported:
+
+* CSharp
+* Dart
+* Dockerfile
+* GLSL shader
+* Go
+* Objective C
+* RELAX NG
+* reStructured text
+* Soy
+
+== Pagination and Filtering on Branch List
+
+.Paging:
+image:../../img/branch-paging.png[]
+
+.Filtering:
+image:../../img/branch-filtering.png[]
+
+++++
+<style type="text/css">
+#title-page {
+  border-bottom: 0;
+  text-align: center;
+  position: relative;
+  top: 30%;
+  font-size: 60px;
+}
+</style>
+++++
