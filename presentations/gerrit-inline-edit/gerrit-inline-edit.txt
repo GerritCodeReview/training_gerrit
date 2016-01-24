@@ -9,19 +9,25 @@
 
 * Motivation
 * Design
-* Create change
+* Create new change
 * Edit change
 * Review change edit
 * Change edit actions
+* Finding change edits
+* Uploading change edits
+* Customize inline editor
 * Future work
 
 == Motivation
 
-* Allow to modify repository content directly in a browser
-* As a change owner: Address reviewer comments
-* As a reviewier: Fix the patch directly and shorten comment, wait, re-review loop 
+* Allow to modify repository content directly in browser
 * Low barrier to contribute to a project
-* Other collaboration platforms have this feature
+* As a change owner: Address reviewer comments
+* As a reviewer: Fix the patch directly in browser and shorten
++
+comment, wait and re-review loop
++
+* As project administrator: Edit Gerrit project configuration directly in browser
 
 == Design
 
@@ -76,7 +82,21 @@ to create a new draft change based on the selected change:
 +
 image:../../img/inline-edit-create-follow-up-change.png[]
 
+== Creating a Change for refs/meta/config branch (1)
+
+* By clicking the 'Edit Config' button on the project screen
++
+to create a new draft change on `refs/meta/config` branch:
++
+image:../../img/inline-edit-create-edit-project-config-change.png[]
+
 [[create-change-from-project-info-screen]]
+
+== Creating a Change for refs/meta/config branch (2)
+
+* `project.config` file is opened in inline editor
++
+image:../../img/inline-edit-create-edit-project-config-file-content.png[]
 
 == Editing Changes
 
@@ -86,7 +106,9 @@ image:../../img/inline-edit-enter-edit-mode-from-file-list.png[]
 
 == Editing Changes
 
-* In edit mode, files can be added, deleted and renamed
+* In edit mode files can be added, deleted, restored and renamed
+* In edit mode file table links navigate to the inline editor
+* In review mode file table links navigate to the diff screen
 * To switch from edit mode back to review mode, click the 'Done Editing' button
 +
 image:../../img/inline-edit-file-list-in-edit-mode.png[]
@@ -152,13 +174,31 @@ image:../../img/inline-edit-rebase-or-delete.png[]
 
 image:../../img/inline-edit-download-change-edit.png[]
 
+== Finding change edits
+
+* `has:edit` secondary index predicate is used to find changes that have
+  change edit on them
+
+image:../../img/inline-edit-finding-change-edit.png[]
+
+== Uploading change edits
+
+* To push a change edit to an existing change, use the `%edit` magic branch option:
+
+----
+   $ git push HEAD:refs/for/master%edit
+----
+
+== Customize inline editor
+
+* Inline editor settings can be changed in the editor or
+* Inline editor settings can be changed in user preferences section
+
+image:../../img/inline-edit-customize-inline-editor.png[]
+
+
 == Future work
 
-* Allow to customize inline editor appearance per user base: color,
-+
-syntax highlighting, key maps (Emacs, Sublime, Vim), etc.
-+
-* Allow change edits to be pushed with 'git push HEAD:refs/for/master%edit'
 * Mark changed files in context of change edit in file table
 * Reuse inline edit feature for conflict resolution during rebase operation
 
