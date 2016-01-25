@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "34a92e60_84cd268d",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2016-01-25T02:58:53Z",
+      "side": 1,
+      "message": "nit: wrap long lines; remove trailing whitespace",
+      "revId": "c068b02f96a4077859f1c0676beaf79cc9de8a1d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "34a92e60_a4caa270",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 183,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2016-01-25T02:58:53Z",
+      "side": 1,
+      "message": "\"To push a change edit to an existing change, use the `%edit` magic branch option.\"",
+      "range": {
+        "startLine": 183,
+        "startChar": 2,
+        "endLine": 183,
+        "endChar": 75
+      },
+      "revId": "c068b02f96a4077859f1c0676beaf79cc9de8a1d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "94df3af2_cfdedd2f",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 193,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2016-01-25T02:58:53Z",
+      "side": 1,
+      "message": "Not related to inline edit.",
+      "range": {
+        "startLine": 193,
+        "startChar": 2,
+        "endLine": 193,
+        "endChar": 62
+      },
+      "revId": "c068b02f96a4077859f1c0676beaf79cc9de8a1d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
