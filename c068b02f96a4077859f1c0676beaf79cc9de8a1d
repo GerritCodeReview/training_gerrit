@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "b4535e54_18d605ea",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-01-25T07:09:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "34a92e60_84cd268d",
+      "revId": "c068b02f96a4077859f1c0676beaf79cc9de8a1d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "34a92e60_a4caa270",
         "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
         "patchSetId": 1
@@ -42,6 +60,30 @@
     },
     {
       "key": {
+        "uuid": "b4535e54_78dbc111",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 183,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-01-25T07:09:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "34a92e60_a4caa270",
+      "range": {
+        "startLine": 183,
+        "startChar": 2,
+        "endLine": 183,
+        "endChar": 75
+      },
+      "revId": "c068b02f96a4077859f1c0676beaf79cc9de8a1d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "94df3af2_cfdedd2f",
         "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
         "patchSetId": 1
@@ -53,6 +95,30 @@
       "writtenOn": "2016-01-25T02:58:53Z",
       "side": 1,
       "message": "Not related to inline edit.",
+      "range": {
+        "startLine": 193,
+        "startChar": 2,
+        "endLine": 193,
+        "endChar": 62
+      },
+      "revId": "c068b02f96a4077859f1c0676beaf79cc9de8a1d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "94565a44_9766642a",
+        "filename": "presentations/gerrit-inline-edit/gerrit-inline-edit.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 193,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-01-25T07:09:47Z",
+      "side": 1,
+      "message": "The point was, that it tooks years to add support for inline editor customization. And this statement was the explanation why. But you are right, it\u0027s unrelated to inline edit topic. Removed.",
+      "parentUuid": "94df3af2_cfdedd2f",
       "range": {
         "startLine": 193,
         "startChar": 2,
