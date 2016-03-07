@@ -196,6 +196,14 @@ image:../../img/inline-edit-finding-change-edit.png[]
 
 image:../../img/inline-edit-customize-inline-editor.png[]
 
+== Insert Signed-off-by Footer for inline edit changes
+
+* For some sites a restricion may be configured to only allow uploading
+  changes that include signed-off-by footer. To allow such Gerrit sites, like
+  Eclipse.org, to use inline edit feature, user preference option was added to
+  enable automatic inserting of Signed-off-by Footer to changes during upload:
+
+image:../../img/inline-edit-signed-off-by-footer.png[]
 
 == Future work
 
