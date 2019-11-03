@@ -1,0 +1,8 @@
+digraph change_workflow_post_submit {
+start -> MERGED [ label="push" fontname=Verdana fontsize=12, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"];
+MERGED -> end [ fontname=Verdana fontsize=12, style=filled, color="#31CEF0" ]
+
+start [shape=Mdiamond fontname=Verdana, fontsize=10, height=0.02, width=0.02, style=filled, color="#31CEF0"];
+end [shape=Msquare fontname=Verdana, fontsize=10, height=0.02, width=0.02, style=filled, color="#31CEF0"];
+MERGED [fontname=Verdana, fontsize=10, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"]
+}

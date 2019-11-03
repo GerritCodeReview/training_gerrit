@@ -1,0 +1,21 @@
+digraph change_workflow_custom {
+start -> NEW  [ label="push" fontname=Verdana fontsize=12, style=filled, color="#31CEF0" ]
+NEW -> MERGED [ label="submit" fontname=Verdana fontsize=12, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"];
+MERGED -> INTEGRATION  [ label="deploy INT" fontname=Verdana fontsize=12, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"];
+INTEGRATION -> ACCEPTANCE [ label="deploy ACCEPT" fontname=Verdana fontsize=12, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"];
+ACCEPTANCE -> PRE_PROD [ label="deploy PRE_PROD" fontname=Verdana fontsize=12, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"];
+PRE_PROD -> PROD [ label="deploy PROD" fontname=Verdana fontsize=12, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"];
+PROD -> end [ fontname=Verdana fontsize=12, style=filled, color="#31CEF0" ]
+NEW -> ABANDONED  [ label="abandon" fontname=Verdana fontsize=12, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"];
+ABANDONED -> NEW [ label="restore" fontname=Verdana fontsize=12, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"];
+
+start [shape=Mdiamond fontname=Verdana, fontsize=10, height=0.02, width=0.02, style=filled, color="#31CEF0"];
+end [shape=Msquare fontname=Verdana, fontsize=10, height=0.02, width=0.02, style=filled, color="#31CEF0"];
+NEW [fontname=Verdana, fontsize=10, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"]
+ABANDONED [fontname=Verdana, fontsize=10, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"]
+MERGED [fontname=Verdana, fontsize=10, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"]
+INTEGRATION [fontname=Verdana, fontsize=10, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"]
+ACCEPTANCE [fontname=Verdana, fontsize=10, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"]
+PRE_PROD [fontname=Verdana, fontsize=10, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"]
+PROD [fontname=Verdana, fontsize=10, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"]
+}

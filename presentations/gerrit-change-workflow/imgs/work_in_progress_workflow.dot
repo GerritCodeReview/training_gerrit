@@ -1,0 +1,17 @@
+digraph draft_change_workflow {
+start -> WORK_IN_PROGRESS  [ label="push as wip" fontname=Verdana fontsize=12, style=filled, color="#31CEF0" ]
+WORK_IN_PROGRESS -> NEW  [ label="ready" fontname=Verdana fontsize=12, style=filled, color="#31CEF0" ]
+NEW -> WORK_IN_PROGRESS  [ label="wip" fontname=Verdana fontsize=12, style=filled, color="#31CEF0" ]
+start -> NEW  [ label="push" fontname=Verdana fontsize=12, style=filled, color="#31CEF0" ]
+NEW -> MERGED [ label="submit" fontname=Verdana fontsize=12, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"];
+NEW -> ABANDONED  [ label="abandon" fontname=Verdana fontsize=12, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"];
+ABANDONED -> NEW [ label="restore" fontname=Verdana fontsize=12, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"];
+MERGED -> end [ fontname=Verdana fontsize=12, style=filled, color="#31CEF0" ]
+
+start [shape=Mdiamond fontname=Verdana, fontsize=10, height=0.02, width=0.02, style=filled, color="#31CEF0"];
+end [shape=Msquare fontname=Verdana, fontsize=10, height=0.02, width=0.02, style=filled, color="#31CEF0"];
+NEW [fontname=Verdana, fontsize=10, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"]
+WORK_IN_PROGRESS [fontname=Verdana, fontsize=10, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"]
+MERGED [fontname=Verdana, fontsize=10, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"]
+ABANDONED [fontname=Verdana, fontsize=10, height=0.02, width=0.02, shape=Mrecord, style=filled, color="#31CEF0"]
+}
